@@ -1,0 +1,82 @@
+.burger {
+  position: fixed;
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: auto;
+  max-height: calc(100vh - 71px);
+  top: 71px;
+  left: 0;
+  right: 0;
+  background-color: var(--bg);
+  transform: translateY(30px);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 100;
+  transition: opacity .4s ease, visibility .4s ease, transform .4s ease;
+  @include tablet {
+    top: 61px;
+    max-height: calc(100vh - 61px);
+  }
+  &._open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  &__column {
+    flex: 1;
+
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.96px;
+    text-transform: uppercase;
+
+    &:not(:last-child) {
+      border-right: 1px solid black
+    }
+    @include tablet-min {
+      flex: 0 1 100%;
+    }
+  }
+  &__column-title {
+    @include flex-center;
+    text-align: center;
+    min-height: 72px;
+    border-bottom: 1px solid black;
+    @include tablet {
+      min-height: 60px;
+    }
+  }
+  &__list {
+    li {
+      border-bottom: 1px solid black;
+    }
+    a {
+      position: relative;
+      display: flex;
+      align-items: center;
+      padding: 10px 80px 10px 30px;
+      min-height: 72px;
+      transition: background-color .2s ease;
+      @include hover {
+        background-color: var(--main);
+      }
+      @include tablet {
+        padding: 5px 50px 5px 20px;
+        min-height: 60px;
+      }
+
+      &::after {
+        position: absolute;
+        content: "";
+        width: 20px;
+        height: 20px;
+        right: 50px;
+        background: url('@img/arrow.svg') 0 0 / 100% auto no-repeat;
+        @include tablet {
+          right: 20px;
+        }
+      }
+    }
+  }
+}
