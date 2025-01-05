@@ -27,6 +27,14 @@
     border-color: var(--main);
   }
 
+  &._primary {
+    background-color: var(--main);
+    border-color: var(--main);
+    @include hover {
+      background-color: transparent;
+    }
+  }
+
   &__icon {
     width: 13px;
     height: 13px;

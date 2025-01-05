@@ -9,6 +9,7 @@
 // ui
 @import "./ui/button";
 @import "./ui/list";
+@import "./ui/title";
 
 // widgets
 @import "./widgets/burger";
@@ -16,6 +17,8 @@
 // components
 @import "./components/header";
 
-
+@import "./components/intro";
+@import "./components/intro-about";
+@import "./components/services";
 
 @import "./components/footer";
