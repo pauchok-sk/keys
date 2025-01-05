@@ -1,6 +1,10 @@
-.tab {
+[data-tab] {
   display: none;
-  &.active {
+  &._open {
     display: block;
   }
+}
+
+[data-tab-btn] {
+  cursor: pointer;
 }

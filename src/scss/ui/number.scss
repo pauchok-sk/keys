@@ -1,0 +1,10 @@
+.number {
+  @include flex-center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid black;
+  font-family: "Mulish", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
