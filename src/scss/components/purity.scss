@@ -1,0 +1,118 @@
+.purity {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  &__container {
+    display: flex;
+  }
+  &__img {
+    width: 50%;
+    height: 960px;
+    object-fit: cover;
+    @include laptop-min {
+      width: 500px;
+      height: auto;
+      margin-bottom: 40px;
+    }
+  }
+  &__info {
+    @include flex-center;
+    padding: 40px;
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+    @include laptop-min {
+      padding: 100px 30px;
+      width: 100%;
+    }
+    @include tablet {
+      padding: 80px 16px;
+    }
+  }
+  &__title {
+    max-width: 680px;
+    margin: 0px 0px 30px 0px;
+    @include tablet {
+      margin-bottom: 20px;
+    }
+  }
+  &__content {
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.72px;
+    text-transform: uppercase;
+    margin: 0px 0px 160px 0px;
+    @include laptop-min {
+      margin-bottom: 40px;
+    }
+  }
+  &__buttons {
+    @include flex-center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 40px;
+    margin-bottom: 60px;
+    @include tablet {
+      gap: 8px;
+      margin-bottom: 30px;
+    }
+  }
+  &__btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+    flex: 0 1 110px;
+
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.72px;
+    text-transform: uppercase;
+
+    @include tablet {
+      font-size: 11px;
+      font-weight: 500;
+      line-height: 18px;
+      letter-spacing: 0.44px;
+      gap: 8px;
+      flex-basis: 100px;
+    }
+
+    &._active {
+      .purity__btn-gallery {
+        border-color: black;
+      }
+    }
+  }
+  &__btn-number {
+    font-size: 12px;
+  }
+  &__btn-gallery {
+    @include flex-center;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    border: 1px solid transparent;
+    @include tablet {
+      width: 70px;
+      height: 70px;
+    }
+  }
+  &__btn-icon {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 80px;
+    height: 80px;
+    @include tablet {
+      width: 56px;
+      height: 56px;
+    }
+  }
+  &__tab-content {
+    margin: 0 auto;
+    max-width: 680px;
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--shaft);
+  }
+}

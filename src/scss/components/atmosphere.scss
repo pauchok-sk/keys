@@ -1,0 +1,126 @@
+.atmosphere {
+  padding: 140px 0px;
+  @include laptop-min {
+    padding: 100px 0px;
+  }
+  @include tablet {
+    padding: 80px 0px;
+  }
+  &__container {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  &__main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 1 calc(50% - 20px);
+    @include laptop-min {
+      flex: 1;
+    }
+  }
+  &__title {
+    max-width: 680px;
+    text-align: center;
+    margin: 0px 0px 140px 0px;
+    @include laptop-min {
+      margin-bottom: 40px;
+    }
+  }
+  &__buttons {
+    @include flex-center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 40px;
+    margin-bottom: 60px;
+    @include tablet {
+      gap: 8px;
+      margin-bottom: 30px;
+    }
+  }
+  &__btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+    flex: 0 1 110px;
+
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.72px;
+    text-transform: uppercase;
+
+    @include tablet {
+      font-size: 11px;
+      font-weight: 500;
+      line-height: 18px;
+      letter-spacing: 0.44px;
+      gap: 8px;
+      flex-basis: 100px;
+    }
+
+    &._active {
+      .atmosphere__btn-gallery {
+        border-color: black;
+      }
+    }
+  }
+  &__btn-gallery {
+    @include flex-center;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    border: 1px solid transparent;
+    @include tablet {
+      width: 70px;
+      height: 70px;
+    }
+  }
+  &__btn-icon {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 80px;
+    height: 80px;
+    @include tablet {
+      width: 56px;
+      height: 56px;
+    }
+  }
+  &__tab-content {
+    font-size: 16px;
+    line-height: 22px;
+    max-width: 680px;
+    text-align: center;
+    color: var(--shaft);
+    margin: 0px 0px 60px 0px;
+    @include tablet {
+      margin-bottom: 30px;
+    }
+  }
+  &__tab-btn {
+    width: fit-content;
+    margin: 0 auto;
+  }
+  &__gallery {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    @include laptop-min {
+      margin: 0 auto 40px auto;
+      width: 100%;
+      flex: none;
+    }
+  }
+  &__img {
+    width: 470px;
+    @include laptop-min {
+      width: 400px;
+    }
+    @include tablet-min {
+      width: 245px;
+    }
+  }
+}

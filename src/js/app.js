@@ -7,7 +7,7 @@ import scrollables from "./files/scrollables.js";
 import sliders from "./files/sliders.js";
 import tab from "./files/tab.js";
 
-functions.isWebp();
+functions.mediaAdaptive();
 spoller();
 burger();
 scrollables();
