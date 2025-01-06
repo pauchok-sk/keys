@@ -1,0 +1,22 @@
+.slider-btn {
+  @include flex-center;
+  cursor: pointer;
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  width: 40px;
+  height: 40px;
+  transition: opacity .2s ease;
+  &._prev {
+    transform: rotate(180deg);
+  }
+
+  @include hover {
+    opacity: 0.5;
+  }
+
+  &__icon {
+    width: 30px;
+    height: 30px;
+  }
+}

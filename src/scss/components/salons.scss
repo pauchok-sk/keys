@@ -1,0 +1,89 @@
+.salons {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  &__head {
+    @include flex-between;
+    padding: 25px 0px;
+    @include tablet {
+      padding: 30px 0px;
+      justify-content: center;
+    
+      .slider-btn {
+        display: none;
+      }
+    }
+  }
+  &__title {
+    font-weight: 400;
+    margin: 0;
+  }
+  &__slider {
+    border-top: 1px solid black;
+
+    .swiper-slide {
+      display: flex !important;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      box-sizing: border-box;
+      border-right: 1px solid black;
+      padding: 50px 0px 60px 0px;
+
+      @include laptop {
+        width: 355px !important;
+        padding: 32px 16px 40px 16px;
+      }
+      @include mobile {
+        width: 315px !important;
+      }
+    }
+  }
+  &__slide-numb {
+    font-size: 12px;
+    margin-bottom: 30px;
+    @include laptop {
+      margin-bottom: 20px;
+    }
+  }
+  &__slide-img {
+    width: 260px;
+    height: 260px;
+    object-fit: cover;
+    margin-bottom: 30px;
+    @include laptop {
+      width: 200px;
+      height: 200px;
+      margin-bottom: 20px;
+    }
+  }
+  &__slide-title {
+    margin: 0px 0px 30px 0px;
+    @include laptop {
+      margin-bottom: 20px;
+    }
+  }
+  &__slide-tel {
+    display: block;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.96px;
+    text-transform: uppercase;
+    margin: 0px 0px 16px 0px;
+    transition: opacity 0.2s ease;
+    @include hover {
+      opacity: 0.5;
+    }
+
+    @include tablet {
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.84px;
+    }
+  }
+  &__slide-content {
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--shaft);
+    margin: 0;
+  }
+}
