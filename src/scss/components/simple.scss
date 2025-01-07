@@ -1,46 +1,30 @@
-.purity {
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+.simple {
+  padding: 140px 0px;
+  @include laptop-min {
+    padding: 100px 0px;
+  }
+  @include tablet {
+    padding: 80px 0px;
+  }
   &__container {
     display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 40px;
   }
-  &__img {
-    width: 50%;
-    height: 960px;
-    object-fit: cover;
-    @include laptop-min {
-      width: 500px;
-      height: auto;
-      margin-bottom: 40px;
-    }
-  }
-  &__info {
-    @include flex-center;
-    padding: 40px;
+  &__main {
+    display: flex;
     flex-direction: column;
-    text-align: center;
-    width: 50%;
+    align-items: center;
+    flex: 0 1 calc(50% - 20px);
     @include laptop-min {
-      padding: 100px 30px;
-      width: 100%;
-    }
-    @include tablet {
-      padding: 80px 16px;
+      flex: 1;
     }
   }
   &__title {
     max-width: 680px;
-    margin: 0px 0px 30px 0px;
-    @include tablet {
-      margin-bottom: 20px;
-    }
-  }
-  &__content {
-    font-size: 12px;
-    line-height: 20px;
-    letter-spacing: 0.72px;
-    text-transform: uppercase;
-    margin: 0px 0px 160px 0px;
+    text-align: center;
+    margin: 0px 0px 140px 0px;
     @include laptop-min {
       margin-bottom: 40px;
     }
@@ -79,13 +63,10 @@
     }
 
     &._active {
-      .purity__btn-gallery {
+      .simple__btn-gallery {
         border-color: black;
       }
     }
-  }
-  &__btn-number {
-    font-size: 12px;
   }
   &__btn-gallery {
     @include flex-center;
@@ -109,10 +90,41 @@
     }
   }
   &__tab-content {
-    margin: 0 auto;
-    max-width: 680px;
     font-size: 16px;
     line-height: 22px;
+    max-width: 680px;
+    text-align: center;
     color: var(--shaft);
+    margin: 0px 0px 60px 0px;
+    @include tablet {
+      margin-bottom: 30px;
+    }
+  }
+  &__tab-btn {
+    width: fit-content;
+    margin: 0 auto;
+  }
+  &__gallery {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    @include laptop-min {
+      margin: 0 auto 40px auto;
+      width: 100%;
+      flex: none;
+    }
+  }
+  &__img {
+    width: 470px;
+    height: 680px;
+    object-fit: cover;
+    @include laptop-min {
+      width: 400px;
+      height: 580px;
+    }
+    @include tablet-min {
+      width: 245px;
+      height: 320px;
+    }
   }
 }
