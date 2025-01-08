@@ -1,0 +1,90 @@
+.stock {
+  position: fixed;
+  max-width: 600px;
+  bottom: 0;
+  right: 0;
+  background-color: var(--bg);
+  border: 1px solid black;
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  &__head {
+    display: flex;
+    background-color: var(--main);
+    border-bottom: 1px solid black;
+  }
+  &__title {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.96px;
+    text-transform: uppercase;
+    min-height: 60px;
+    margin: 0;
+    padding-left: 40px;
+    flex: 1;
+    border-right: 1px solid black;
+    @include tablet {
+      min-height: 50px;
+      padding-left: 30px;
+
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.84px;
+    }
+  }
+  &__close {
+    @include flex-center;
+    padding: 5px;
+    gap: 8px;
+    flex: 0 1 175px;
+    min-height: 60px;
+
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.84px;
+    text-transform: uppercase;
+    transition: opacity 0.2s ease;
+    @include hover {
+      opacity: 0.5;
+    }
+    @include tablet {
+      min-height: 50px;
+    }
+  }
+  &__close-icon {
+    width: 13px;
+    height: 13px;
+  }
+  &__body {
+    padding: 40px;
+    text-align: center;
+    @include tablet {
+      padding: 30px;
+    }
+  }
+  &__main-title {
+    margin: 0px 0px 32px 0px;
+    @include tablet {
+      margin-bottom: 20px;
+    }
+  }
+  &__content {
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--shaft);
+    margin: 0px 0px 40px 0px;
+    @include tablet {
+      font-size: 14px;
+      margin-bottom: 30px;
+    }
+  }
+  &__btn {
+    min-height: 60px;
+    @include tablet {
+      min-height: 50px;
+    }
+  }
+}
