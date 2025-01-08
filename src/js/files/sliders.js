@@ -58,9 +58,9 @@ export default function sliders() {
       centeredSlides: true,
       initialSlide: 3,
       grabCursor: true,
-      // autoplay: {
-      //   delay: 3500,
-      // },
+      autoplay: {
+        delay: 3500,
+      },
       navigation: {
         prevEl: ".portfolio .slider-btn._prev",
         nextEl: ".portfolio .slider-btn._next",
