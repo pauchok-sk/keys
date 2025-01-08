@@ -3,6 +3,10 @@ export default function burger() {
   const burger = document.querySelector("#burger");
   const headerList = document.querySelector(".header__list");
   const headerInst = document.querySelector(".header__inst");
+  const servicesBtn = burger.querySelector("#services-open");
+  const sectionsBtn = burger.querySelector("#sections-open");
+  const services = burger.querySelector("#services");
+  const sections = burger.querySelector("#sections");
 
   if (burger) {
     headerInst.style.display = "none";
@@ -53,5 +57,14 @@ export default function burger() {
 
       document.body.removeEventListener("click", closeBurger);
     }
+
+    servicesBtn.addEventListener("click", () => {
+      services.style.display = "block";
+      sections.style.display = "none";
+    })
+    sectionsBtn.addEventListener("click", () => {
+      services.style.display = "none";
+      sections.style.display = "block";
+    })
   }
 }

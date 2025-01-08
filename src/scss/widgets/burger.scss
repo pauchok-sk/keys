@@ -12,7 +12,10 @@
   opacity: 0;
   visibility: hidden;
   z-index: 100;
-  transition: opacity .4s ease, visibility .4s ease, transform .4s ease;
+  transition:
+    opacity 0.4s ease,
+    visibility 0.4s ease,
+    transform 0.4s ease;
   @include tablet {
     top: 61px;
     max-height: calc(100vh - 61px);
@@ -32,10 +35,15 @@
     text-transform: uppercase;
 
     &:not(:last-child) {
-      border-right: 1px solid black
+      border-right: 1px solid black;
     }
     @include tablet-min {
-      flex: 0 1 100%;
+      flex: none;
+      width: 100%;
+
+      &#services {
+        display: none;
+      }
     }
   }
   &__column-title {
@@ -46,6 +54,35 @@
     @include tablet {
       min-height: 60px;
     }
+    @include tablet-min {
+      display: none;
+    }
+  }
+  &__services-btn {
+    display: none;
+    @include tablet-min {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.84px;
+      text-transform: uppercase;
+
+      width: 100%;
+      padding: 5px 20px;
+      min-height: 60px;
+      border-bottom: 1px solid black;
+
+      transition: background-color 0.2s ease;
+      @include hover {
+        background-color: var(--main);
+      }
+    }
+  }
+  &__services-btn-arrow {
+    width: 20px;
+    height: 20px;
+    margin-left: auto;
   }
   &__list {
     li {
@@ -57,13 +94,17 @@
       align-items: center;
       padding: 10px 80px 10px 30px;
       min-height: 72px;
-      transition: background-color .2s ease;
+      transition: background-color 0.2s ease;
       @include hover {
         background-color: var(--main);
       }
       @include tablet {
         padding: 5px 50px 5px 20px;
         min-height: 60px;
+
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.84px;
       }
 
       &::after {
@@ -72,11 +113,41 @@
         width: 20px;
         height: 20px;
         right: 50px;
-        background: url('@img/arrow.svg') 0 0 / 100% auto no-repeat;
+        background: url("@img/arrow.svg") 0 0 / 100% auto no-repeat;
         @include tablet {
           right: 20px;
         }
+        @include tablet-min {
+          display: none;
+        }
       }
     }
+  }
+  &__prev {
+    display: none;
+
+    @include tablet-min {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.84px;
+      text-transform: uppercase;
+      gap: 8px;
+
+      width: 100%;
+      padding: 5px 20px;
+      min-height: 60px;
+      border-bottom: 1px solid black;
+
+      transition: background-color 0.2s ease;
+      @include hover {
+        background-color: var(--main);
+      }
+    }
+  }
+  &__prev-icon {
+    width: 16px;
+    height: 16px;
   }
 }

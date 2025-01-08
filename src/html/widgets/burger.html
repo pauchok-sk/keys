@@ -1,6 +1,12 @@
 <div class="burger" id="burger">
-  <div class="burger__column">
+  <div class="burger__column" id="sections">
     <span class="burger__column-title">Разделы</span>
+    <button class="btn-clear burger__services-btn" id="services-open">
+      <span>Услуги</span>
+      <svg class="burger__services-btn-arrow">
+        <use xlink:href='img/icons/icons.svg#icon-arrow'></use>
+      </svg>
+    </button>
     <ul class="list burger__list">
       <li>
         <a href="#">Наши работы</a>
@@ -25,8 +31,16 @@
       </li>
     </ul>
   </div>
-  <div class="burger__column">
-    <span class="burger__column-title">Услуги</span>
+  <div class="burger__column" id="services">
+    <span class="burger__column-title">
+      Услуги
+    </span>
+    <button class="btn-clear burger__prev" id="sections-open">
+      <svg class="burger__prev-icon">
+        <use xlink:href='img/icons/icons.svg#icon-arrow-line'></use>
+      </svg>
+      <span>Назад</span>
+    </button>
     <ul class="list burger__list">
       <li>
         <a href="#">Наши работы</a>
