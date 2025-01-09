@@ -1,0 +1,167 @@
+.price {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  &__head {
+    display: flex;
+    gap: 55px;
+    padding: 30px 0px;
+    white-space: nowrap;
+    overflow-x: auto;
+    padding: 30px;
+    border-bottom: 1px solid black;
+    @include tablet {
+      gap: 24px;
+      padding: 30px 16px;
+    }
+
+    @media (min-width: 744px) {
+      &::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+      }
+    }
+  }
+  &__head-btn {
+    position: relative;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.84px;
+    text-transform: uppercase;
+    @include hover {
+      &::before {
+        right: 0;
+      }
+    }
+    &._active {
+      &::before {
+        right: 0;
+      }
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      left: 0;
+      right: 100%;
+      bottom: 0;
+      height: 1px;
+      background-color: currentColor;
+      transition: right 0.2s ease;
+    }
+  }
+  &__wrapper {
+    display: flex;
+    @include laptop-min {
+      flex-direction: column-reverse;
+    }
+  }
+  &__article {
+    padding: 60px;
+    border-right: 1px solid black;
+    flex: 0 1 768px;
+    @include desktop {
+      flex: 1;
+      padding: 40px;
+    }
+    @include laptop-min {
+      flex: none;
+      border-top: 1px solid black;
+    }
+    @include tablet {
+      padding: 16px 16px 60px 16px;
+    }
+  }
+  &__article-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 48px;
+    @include laptop-min {
+      max-width: 640px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  &__article-content {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+  &__info {
+    flex: 1;
+    padding: 60px 100px;
+    @include desktop {
+      padding: 40px;
+    }
+    @include tablet {
+      padding: 40px 16px;
+    }
+  }
+  &__info-title {
+    margin: 0px 0px 50px 0px;
+    @include tablet {
+      margin-bottom: 20px;
+    }
+  }
+  &__list {
+  }
+  &__item {
+    padding: 24px 0px;
+    border-top: 1px solid black;
+    @include tablet {
+      padding: 20px 0px;
+    }
+  }
+  &__item-head {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    @include tablet {
+      gap: 12px;
+    }
+  }
+  &__item-title {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.96px;
+    text-transform: uppercase;
+    font-weight: 400;
+    flex: 1;
+    margin: 0;
+    @include tablet {
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.84px;
+    }
+  }
+  &__item-price {
+    font-size: 34px;
+    font-weight: 300;
+    line-height: 38px;
+    @include tablet {
+      font-size: 30px;
+      font-weight: 300;
+      line-height: 30px;
+    }
+  }
+  &__item-icon {
+    width: 30px;
+    height: 30px;
+    @include tablet {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  &__item-content {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 8px 0px 0px 0px;
+    max-width: 690px;
+    @include tablet {
+      margin-top: 14px;
+    }
+  }
+}

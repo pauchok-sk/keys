@@ -1,0 +1,57 @@
+.intro-single {
+  display: flex;
+  align-items: stretch;
+  border-bottom: 1px solid black;
+  @include laptop-min {
+    flex-wrap: wrap;
+  }
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    flex: 1;
+    padding: 100px 40px;
+    @include desktop {
+      padding: 80px 30px;
+    }
+    @include laptop {
+      padding: 60px 30px;
+    }
+    @include tablet {
+      padding: 50px 16px 60px 16px;
+    }
+  }
+  &__title {
+    text-align: center;
+    margin: 0px 0px 130px 0px;
+    max-width: 760px;
+    @include desktop {
+      margin-bottom: 80px;
+    }
+    @include laptop {
+      margin-bottom: 60px;
+    }
+    @include laptop-min {
+      margin-bottom: 40px;
+    }
+  }
+  &__content {
+    max-width: 680px;
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--shaft);
+    margin: 0px 0px 40px 0px;
+  }
+  &__btn {
+  }
+  &__img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    @include laptop-min {
+      width: 100%;
+    }
+  }
+}

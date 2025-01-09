@@ -2,6 +2,26 @@
   font-family: "Cormorant", sans-serif;
 }
 
+.title-1 {
+  font-size: 86px;
+  font-weight: 300;
+  line-height: 80px;
+
+  @include laptop {
+    font-size: 62px;
+    line-height: 64px;
+  }
+
+  @include laptop-middle {
+    font-size: 54px;
+    line-height: 60px;
+  }
+  @include tablet {
+    font-size: 38px;
+    line-height: 40px;
+  }
+}
+
 .title-2 {
   font-size: 50px;
   font-weight: 300;

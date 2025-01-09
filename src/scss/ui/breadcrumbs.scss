@@ -2,10 +2,14 @@
   @include flex-center;
   flex-wrap: wrap;
   gap: 20px;
+  row-gap: 10px;
   margin-bottom: 60px;
+  @include laptop {
+    margin-bottom: 40px;
+  }
   @include tablet {
     gap: 12px;
-    margin-bottom: 40px;
+    row-gap: 8px;
   }
   li {
     position: relative;
