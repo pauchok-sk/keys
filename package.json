@@ -23,6 +23,7 @@
 		"@babel/cli": "latest",
 		"@babel/core": "latest",
 		"@babel/preset-react": "latest",
+		"@fancyapps/ui": "^5.0.36",
 		"@types/isotope-layout": "^3.0.9",
 		"@types/react": "^18.0.28",
 		"@types/react-dom": "^18.0.11",
@@ -85,7 +86,6 @@
 		"webpack-stream": "latest"
 	},
 	"dependencies": {
-		"@fancyapps/ui": "^5.0.36",
 		"gulp-cheerio": "^1.0.0",
 		"isotope-layout": "^3.0.6",
 		"simplebar": "latest"

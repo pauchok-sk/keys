@@ -8,6 +8,7 @@ import sliders from "./files/sliders.js";
 import tab from "./files/tab.js";
 import fancy from "./files/fancy.js";
 import removes from "./files/removes.js";
+import more from "./files/more.js";
 
 functions.mediaAdaptive();
 spoller();
@@ -17,3 +18,4 @@ sliders();
 tab();
 fancy();
 removes();
+more();

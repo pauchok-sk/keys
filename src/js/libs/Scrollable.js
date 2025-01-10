@@ -7,7 +7,6 @@ export default class Scrollable {
     this.options = Object.assign(defaultOptions, options);
 
     if (!this.container) {
-      console.error("Scrollbale: Selector not found");
       return;
     }
 
