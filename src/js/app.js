@@ -9,6 +9,7 @@ import tab from "./files/tab.js";
 import fancy from "./files/fancy.js";
 import removes from "./files/removes.js";
 import more from "./files/more.js";
+import map from "./files/map.js";
 
 functions.mediaAdaptive();
 spoller();
@@ -19,3 +20,4 @@ tab();
 fancy();
 removes();
 more();
+map();

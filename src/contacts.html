@@ -6,9 +6,22 @@
     @@include('html/widgets/burger.html') @@include('html/widgets/stock.html')
     @@include('html/widgets/online-record.html')
     <main>
+
       @@include('html/components/intro-contacts.html')
+      @@include('html/components/maps.html')
+      @@include('html/components/contact.html')
+      @@include('html/components/requisites.html')
+      <section class="intro-about">
+        <div class="container">
+          <p class="title title-3 intro-about__content">
+            Если у вас есть всего 1 час приходите в наш салон. Мы выполним любой маникюр и педикюр в 4 руки, а вы успеете отдохнуть и набраться сил!
+          </p>
+        </div>
+      </section>
+
     </main>
     @@include('html/components/footer.html')
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=b46e9249-4925-4460-b11c-3aaf76ad0115&lang=ru_RU" type="text/javascript"></script>
     <script src="js/app.min.js"></script>
   </body>
 </html>

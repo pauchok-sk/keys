@@ -67,4 +67,28 @@ export default function sliders() {
       },
     });
   }
+
+  const mapsSliders = document.querySelectorAll(".maps__slider");
+
+  if (mapsSliders.length) {
+    mapsSliders.forEach((slider) => {
+      const swiper = new Swiper(slider, {
+        speed: 1000,
+        modules: [Autoplay, Navigation],
+        spaceBetween: 16,
+        grabCursor: true,
+        // autoplay: {
+        //   delay: 3500,
+        // },
+        navigation: {
+          prevEl: slider
+            .closest(".maps__wrapper-slider")
+            .querySelector(".slider-btn._prev"),
+          nextEl: slider
+            .closest(".maps__wrapper-slider")
+            .querySelector(".slider-btn._next"),
+        },
+      });
+    });
+  }
 }

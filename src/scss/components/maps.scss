@@ -1,0 +1,144 @@
+.maps {
+  &__wrapper {
+    display: flex;
+    @include laptop-min {
+      flex-wrap: wrap;
+    }
+  }
+  &__main {
+    @include flex-center;
+    flex-direction: column;
+    padding: 120px 40px;
+    flex: 1;
+    border-right: 1px solid black;
+    @include laptop-min {
+      flex-basis: 100%;
+      border-bottom: 1px solid black;
+      padding: 60px 16px;
+    }
+  }
+  &__title {
+    text-align: center;
+    margin: 0px 0px 40px 0px;
+    @include laptop-min {
+      margin-bottom: 32px;
+    }
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 50px;
+    @include laptop-min {
+      margin-bottom: 40px;
+    }
+
+    li {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      font-size: 16px;
+      line-height: 22px;
+
+      span {
+        &:first-child {
+          font-size: 14px;
+          line-height: 20px;
+          letter-spacing: 0.84px;
+          text-transform: uppercase;
+          @include tablet {
+            font-size: 12px;
+            letter-spacing: 0.72px;
+          }
+        }
+      }
+      a {
+        @include hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  &__map {
+    width: 520px;
+    height: 280px;
+    margin-bottom: 50px;
+    @include laptop-min {
+      margin-bottom: 40px;
+    }
+    @include tablet {
+      width: 100%;
+      height: 310px;
+    }
+    @include mobile {
+      height: 220px;
+    }
+  }
+  &__content {
+    text-align: center;
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--shaft);
+    max-width: 680px;
+    margin-bottom: 40px;
+
+    p {
+      margin: 0;
+      &:not(:last-child) {
+        margin-bottom: 18px;
+      }
+    }
+  }
+  &__wrapper-slider {
+    @include flex-center;
+    position: relative;
+    flex: 1;
+    padding: 40px;
+    @include laptop {
+      flex-direction: column;
+      gap: 15px;
+    }
+    @include laptop-min {
+      padding: 60px 16px;
+    }
+  }
+  &__slider {
+    max-width: 100%;
+    width: 495px !important;
+    height: 660px !important;
+    @media (max-width: 1199px) {
+      width: 340px !important;
+      height: 450px !important;
+    }
+    @include mobile {
+      width: 265px !important;
+      height: 350px !important;
+    }
+  }
+  &__slider-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  &__slider-nav {
+    @include flex-between;
+    position: absolute;
+    top: 50%;
+    left: 100px;
+    right: 100px;
+    transform: translateY(-50%);
+
+    @media (max-width: 1600px) {
+      left: 30px;
+      right: 30px;
+    }
+    @include laptop {
+      position: static;
+      justify-content: center;
+      gap: 40px;
+      transform: translateY(0);
+    }
+  }
+}

@@ -1,5 +1,9 @@
 .header {
+  position: sticky;
+  top: 0;
   border-bottom: 1px solid black;
+  background-color: var(--bg);
+  z-index: 100;
   &__container {
     display: flex;
     align-items: stretch;
