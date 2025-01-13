@@ -1,6 +1,6 @@
 .services {
   overflow: hidden;
-  border-top: 1px solid black;
+  // border-top: 1px solid black;
   &__nav {
     @include flex-between;
     gap: 60px;

@@ -11,6 +11,9 @@
     align-items: start;
     justify-content: space-between;
     gap: 40px;
+    &._stretch {
+      align-items: stretch;
+    }
   }
   &__main {
     display: flex;
@@ -27,7 +30,11 @@
     flex: 1;
     margin: 0px 0px 140px 0px;
     @include laptop-min {
-      margin-bottom: 40px;
+      margin-bottom: 0;
+    }
+
+    &._no-margin {
+      margin: 0;
     }
   }
   &__buttons {
@@ -110,7 +117,7 @@
     justify-content: center;
     flex: 1;
     @include laptop-min {
-      margin: 0 auto 40px auto;
+      margin: 40px auto 40px auto;
       width: 100%;
       flex: none;
     }
@@ -126,6 +133,32 @@
     @include tablet-min {
       width: 245px;
       height: 320px;
+    }
+
+    &._min {
+      width: 620px;
+      height: 400px;
+      @include tablet {
+        width: 440px;
+        height: 280px;
+      }
+      @include mobile {
+        width: 265px;
+        height: 165px;
+      }
+    }
+  }
+  &__content {
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 20px;
+    text-align: center;
+    @include laptop-min {
+      margin-top: 0;
+    }
+    @include tablet {
+      font-size: 14px;
+      line-height: 18px;
     }
   }
 }

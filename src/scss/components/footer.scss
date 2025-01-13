@@ -206,26 +206,32 @@
   }
   &__bottom {
     padding: 40px 0px;
+    font-size: 16px;
     border-top: 1px solid black;
-    display: flex;
-    align-items: start;
-    justify-content: center;
+    @include tablet {
+      padding: 30px 0px;
+      text-align: center;
+    }
+  }
+  &__bottom-container {
+    @include flex-between;
     gap: 8px;
     @include tablet {
       flex-direction: column;
-      padding: 30px 0px;
-      text-align: center;
       align-items: center;
       gap: 16px;
     }
   }
   &__copyright {
-    font-size: 16px;
     line-height: 22px;
     margin: 0;
   }
+  &__policy {
+    @include hover {
+      text-decoration: underline;
+    }
+  }
   &__created {
-    font-size: 16px;
     line-height: 11px;
     a {
       text-decoration: underline;

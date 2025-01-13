@@ -5,11 +5,7 @@ export default function scrollables() {
     wheelScrolling: true,
   });
 
-  new Scrollable(".price__head", {
-    wheelScrolling: true,
-  });
-
-  new Scrollable(".our-works__head", {
+  new Scrollable(".head-nav", {
     wheelScrolling: true,
   });
 }

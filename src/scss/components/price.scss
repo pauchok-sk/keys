@@ -1,54 +1,4 @@
 .price {
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-  &__head {
-    display: flex;
-    gap: 55px;
-    padding: 30px 0px;
-    white-space: nowrap;
-    overflow-x: auto;
-    padding: 30px;
-    border-bottom: 1px solid black;
-    @include tablet {
-      gap: 24px;
-      padding: 30px 16px;
-    }
-
-    @media (min-width: 744px) {
-      &::-webkit-scrollbar {
-        width: 0;
-        height: 0;
-      }
-    }
-  }
-  &__head-btn {
-    position: relative;
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: 0.84px;
-    text-transform: uppercase;
-    @include hover {
-      &::before {
-        right: 0;
-      }
-    }
-    &._active {
-      &::before {
-        right: 0;
-      }
-    }
-
-    &::before {
-      position: absolute;
-      content: "";
-      left: 0;
-      right: 100%;
-      bottom: 0;
-      height: 1px;
-      background-color: currentColor;
-      transition: right 0.2s ease;
-    }
-  }
   &__wrapper {
     display: flex;
     @include laptop-min {
@@ -85,10 +35,17 @@
   &__article-content {
     font-size: 14px;
     line-height: 20px;
-    margin: 0;
-    &:not(:last-child) {
-      margin-bottom: 20px;
+
+    p {
+      margin: 0;
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
     }
+  }
+  &__article-btn {
+    width: fit-content;
+    margin-top: 48px;
   }
   &__info {
     flex: 1;

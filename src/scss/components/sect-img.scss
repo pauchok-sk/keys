@@ -1,8 +1,11 @@
 .sect-img {
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  // border-top: 1px solid black;
+  // border-bottom: 1px solid black;
   &__container {
     display: flex;
+    &._stretch {
+      align-items: stretch;
+    }
   }
   &__img {
     width: 50%;
@@ -11,7 +14,7 @@
     @include laptop-min {
       width: 500px;
       height: 500px;
-      margin-top: 40px;
+      margin: 40px 0px;
     }
     @include tablet-min {
       width: 400px;
@@ -20,6 +23,22 @@
     @include mobile {
       width: 345px;
       height: 345px;
+    }
+
+    &._middle {
+      height: 600px;
+      @include laptop-min {
+        width: 500px;
+        height: 355px;
+      }
+      @include tablet {
+        width: 440px;
+        height: 315px;
+      }
+      @include mobile {
+        width: 345px;
+        height: 220px;
+      }
     }
   }
   &__info {
@@ -52,12 +71,19 @@
   &__title {
     max-width: 680px;
     margin: 0px 0px 30px 0px;
-    @include tablet {
-      margin-bottom: 20px;
+    @include laptop-min {
+      margin-bottom: 0;
     }
 
     &._no-margin {
       margin: 0;
+      flex: 1;
+    }
+    &._discount-marign {
+      margin-bottom: 180px;
+      @include laptop-min {
+        margin-bottom: 0;
+      }
     }
   }
   &__content {
@@ -150,13 +176,13 @@
   &__list {
     text-align: start;
     width: 100%;
-    margin-top: 380px;
-    @include desktop {
-      margin-top: 200px;
-    }
-    @include laptop-min {
-      margin-top: 40px;
-    }
+    // margin-top: 380px;
+    // @include desktop {
+    //   margin-top: 200px;
+    // }
+    // @include laptop-min {
+    //   margin-top: 40px;
+    // }
   }
   &__list-item {
     display: flex;
@@ -186,6 +212,24 @@
       font-size: 10px;
       width: 16px;
       height: 16px;
+    }
+  }
+  &__content-main {
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 20px;
+    @include laptop-min {
+      margin-top: 0;
+    }
+    @include tablet {
+      font-size: 14px;
+      line-height: 18px;
+    }
+
+    a {
+      @include hover {
+        text-decoration: underline;
+      }
     }
   }
 }

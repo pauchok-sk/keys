@@ -21,3 +21,9 @@ body {
   font-family: "Mulish", sans-serif;
   background-color: var(--bg);
 }
+
+section {
+  &:not(:last-child) {
+    border-bottom: 1px solid black;
+  }
+}

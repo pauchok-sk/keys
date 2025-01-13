@@ -1,7 +1,7 @@
 .intro-single {
   display: flex;
   align-items: stretch;
-  border-bottom: 1px solid black;
+  // border-bottom: 1px solid black;
   @include laptop-min {
     flex-wrap: wrap;
   }

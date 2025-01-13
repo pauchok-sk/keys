@@ -1,5 +1,4 @@
 .our-works {
-  border-top: 1px solid black;
   padding-bottom: 120px;
   @include laptop-min {
     padding-bottom: 100px;
@@ -7,60 +6,12 @@
   @include tablet {
     padding-bottom: 80px;
   }
-  &__head {
-    padding: 30px;
-    border-bottom: 1px solid black;
-    margin-bottom: 60px;
-    display: flex;
-    white-space: nowrap;
-    overflow-x: auto;
-    gap: 56px;
-    @include tablet {
-      padding: 30px 16px;
-      gap: 24px;
-      margin-bottom: 30px;
-    }
-
-    @media (min-width: 1025px) {
-      &::-webkit-scrollbar {
-        width: 0;
-        height: 0;
-      }
-    }
-  }
-  &__head-btn {
-    position: relative;
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: 0.84px;
-    text-transform: uppercase;
-    @include hover {
-      &::before {
-        right: 0;
-      }
-    }
-    &._active {
-      &::before {
-        right: 0;
-      }
-    }
-
-    &::before {
-      position: absolute;
-      content: "";
-      height: 1px;
-      background-color: currentColor;
-      left: 0;
-      right: 100%;
-      bottom: -5px;
-      transition: right 0.2s ease;
-    }
-  }
   &__container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 60px;
     max-width: calc(1720px + 60px);
+    margin-top: 60px;
     @include laptop {
       gap: 40px;
     }
@@ -69,6 +20,7 @@
     }
     @include tablet {
       gap: 16px;
+      margin-top: 32px;
     }
     @include mobile {
       max-width: 376px;
