@@ -110,8 +110,31 @@ export default function sliders() {
       breakpoints: {
         1111: {
           slidesPerView: 3,
-        }
-      }
+        },
+      },
+    });
+  }
+  const socialSlider = document.querySelector(".social__slider");
+
+  if (socialSlider) {
+    const swiper = new Swiper(socialSlider, {
+      speed: 1000,
+      modules: [Autoplay, Navigation],
+      slidesPerView: "auto",
+      spaceBetween: 16,
+      grabCursor: true,
+      autoplay: {
+        delay: 3500,
+      },
+      navigation: {
+        prevEl: ".social .slider-btn._prev",
+        nextEl: ".social .slider-btn._next",
+      },
+      breakpoints: {
+        744: {
+          spaceBetween: 8,
+        },
+      },
     });
   }
 }

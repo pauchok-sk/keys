@@ -1,0 +1,97 @@
+.reviews-catalog {
+  position: relative;
+  border-bottom: none;
+  &::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    background-color: black;
+  }
+  &__body {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-column: 4 span;
+    padding: 80px 60px;
+    text-align: center;
+    border-bottom: 1px solid black;
+
+    @media (max-width: 1199px) {
+      grid-column: 6 span;
+    }
+    @include tablet {
+      padding: 40px 16px;
+      grid-column: 12 span;
+    }
+
+    @media (min-width: 744px) {
+      &:not(:nth-child(2n + 2)) {
+        border-right: 1px solid black;
+      }
+    }
+    @media (min-width: 1200px) {
+      &:not(:nth-child(3n + 3)) {
+        border-right: 1px solid black;
+      }
+    }
+  }
+  &__item-avatar {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 44px;
+    @include tablet {
+      width: 100px;
+      height: 100px;
+      margin-bottom: 16px;
+    }
+  }
+  &__item-title {
+    flex: 1;
+    margin: 0px 0px 24px 0px;
+    @include tablet {
+      margin-bottom: 12px;
+    }
+  }
+  &__hearts {
+    @include flex-center;
+    gap: 4px;
+    margin-bottom: 80px;
+    @include tablet {
+      margin-bottom: 40px;
+    }
+  }
+  &__heart {
+    width: 19px;
+    height: 19px;
+    stroke: var(--vector);
+
+    color: var(--main);
+  }
+  &__tag {
+    display: block;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.72px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    @include tablet {
+      margin-bottom: 16px;
+    }
+  }
+  &__content {
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    margin: 0;
+    color: var(--shaft);
+  }
+}

@@ -1,7 +1,6 @@
 .intro-single {
   display: flex;
   align-items: stretch;
-  // border-bottom: 1px solid black;
   @include laptop-min {
     flex-wrap: wrap;
   }
@@ -12,7 +11,7 @@
     text-align: center;
 
     flex: 1;
-    padding: 100px 40px;
+    padding: 120px 40px;
     @include desktop {
       padding: 80px 30px;
     }
@@ -25,17 +24,9 @@
   }
   &__title {
     text-align: center;
-    margin: 0px 0px 130px 0px;
+    flex: 1;
+    margin: 0px 0px 40px 0px;
     max-width: 760px;
-    @include desktop {
-      margin-bottom: 80px;
-    }
-    @include laptop {
-      margin-bottom: 60px;
-    }
-    @include laptop-min {
-      margin-bottom: 40px;
-    }
 
     &._no-offset {
       margin: 0;
@@ -71,7 +62,8 @@
       flex-basis: calc(50% - 8px);
     }
 
-    &::before, &::after {
+    &::before,
+    &::after {
       position: absolute;
       content: "";
       border: 1px solid var(--vector);
@@ -114,10 +106,18 @@
     width: 50%;
     height: auto;
     object-fit: cover;
+    height: 700px;
+    @include desktop {
+      height: 600px;
+    }
+    @include laptop {
+      height: 500px;
+    }
     @include laptop-min {
       width: 100%;
       object-fit: cover;
       max-height: 600px;
+      height: auto;
     }
     @include tablet {
       max-height: 400px;

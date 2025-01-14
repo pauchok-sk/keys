@@ -5,4 +5,5 @@ export default function fancy() {
   Fancybox.bind('[data-fancybox="porfolio"]', {});
   Fancybox.bind('[data-fancybox="works"]', {});
   Fancybox.bind('[data-fancybox="maps"]', {});
+  Fancybox.bind('[data-fancybox="socials"]', {});
 }
