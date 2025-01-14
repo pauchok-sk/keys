@@ -11,7 +11,12 @@ export default function more() {
       const media = parentItems.dataset.moreMedia;
       const step = +parentItems.dataset.moreStep;
 
-      const condition = media ? window.matchMedia(`(max-width: ${media}px)`).matches : 1;
+      if (numberShow >= items.length) {
+        btn.remove();
+        return;
+      }
+
+      const condition = media ? window.matchMedia(`(max-width: ${media}px)`).matches : true;
 
       if (condition) {
         Array.from(items)
@@ -21,6 +26,7 @@ export default function more() {
         numberShow += step;
 
         btn.addEventListener("click", () => {
+          console.log(numberShow)
           Array.from(items)
             .slice(0, numberShow)
             .forEach((item) => item.classList.remove("_hidden"));

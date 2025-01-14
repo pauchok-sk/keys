@@ -1,18 +1,18 @@
 .reviews-catalog {
-  position: relative;
   border-bottom: none;
-  &::after {
-    position: absolute;
-    content: "";
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 1px;
-    background-color: black;
-  }
   &__body {
+    position: relative;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    &::after {
+      position: absolute;
+      content: "";
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 1px;
+      background-color: black;
+    }
   }
   &__item {
     display: flex;
@@ -40,6 +40,10 @@
       &:not(:nth-child(3n + 3)) {
         border-right: 1px solid black;
       }
+    }
+
+    &._hidden {
+      display: none;
     }
   }
   &__item-avatar {
@@ -93,5 +97,11 @@
     text-align: center;
     margin: 0;
     color: var(--shaft);
+  }
+  &__btn-more {
+    margin: 60px auto 0px auto;
+    @include tablet {
+      margin-top: 40px;
+    }
   }
 }
