@@ -38,5 +38,9 @@
   &__icon {
     width: 13px;
     height: 13px;
+
+    &._reverse {
+      transform: rotate(180deg);
+    }
   }
 }

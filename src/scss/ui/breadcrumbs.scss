@@ -1,17 +1,22 @@
 .breadcrumbs {
-  @include flex-center;
-  flex-wrap: wrap;
-  gap: 20px;
-  row-gap: 10px;
-  margin-bottom: 60px;
+  width: fit-content;
+  text-align: center;
+  width: 100%;
+  margin: 0px auto 60px auto;
   @include laptop {
     margin-bottom: 40px;
   }
-  @include tablet {
-    gap: 12px;
-    row-gap: 8px;
+  .aioseo-breadcrumbs {
+    @include flex-center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    @include tablet {
+      gap: 12px;
+    }
   }
-  li {
+
+  span {
     position: relative;
     display: flex;
     align-items: center;

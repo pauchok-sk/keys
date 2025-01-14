@@ -1,0 +1,151 @@
+.article {
+  padding: 100px 0px;
+  font-size: 16px;
+  line-height: 22px;
+  @include tablet {
+    padding: 60px 0px 80px 0px;
+
+    font-size: 14px;
+    line-height: 18px;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Cormorant", sans-serif;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  h3 {
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 44px;
+    margin-top: 0;
+    text-align: center;
+    margin-bottom: 60px;
+
+    @include laptop-min {
+      font-size: 32px;
+      line-height: 36px;
+    }
+
+    @include tablet {
+      font-size: 28px;
+      line-height: 30px;
+      margin-bottom: 32px;
+    }
+  }
+  h4 {
+    font-size: 34px;
+    font-weight: 300;
+    line-height: 34px;
+    margin-bottom: 40px;
+    margin-top: 0;
+
+    &:not(:last-child) {
+      margin-top: 80px;
+    }
+
+    @include tablet {
+      font-size: 28px;
+      line-height: 30px;
+      margin-bottom: 24px;
+      &:not(:last-child) {
+        margin-top: 40px;
+      }
+    }
+  }
+
+  p {
+    max-width: 800px;
+    margin: 0 auto;
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+  ul {
+    padding: 0px 0px 0px 25px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  &__gallery {
+    display: flex;
+    padding: 100px 0px;
+    @include tablet {
+      padding: 40px 0px;
+    }
+  }
+  &__gallery-img {
+    display: block;
+    object-fit: cover;
+    width: 420px;
+    @include laptop {
+      width: 320px;
+    }
+    @include tablet {
+      width: 220px;
+    }
+    @include mobile {
+      width: 150px;
+    }
+
+    &:first-child {
+      height: 440px;
+      margin-right: 195px;
+      @media (max-width: 1539px) {
+        margin-right: 40px;
+      }
+      @include laptop-min {
+        margin-right: 0;
+      }
+      @include tablet {
+        height: 280px;
+        margin-right: 15px;
+      }
+      @include mobile {
+        height: 155px;
+      }
+    }
+    &:nth-child(2) {
+      margin-top: 120px;
+      margin-right: 20px;
+      height: 540px;
+      @include laptop-min {
+        height: 390px;
+        margin-top: 45px;
+        margin-left: auto;
+        margin-right: 0;
+      }
+      @include tablet {
+        height: 250px;
+      }
+      @include mobile {
+        height: 190px;
+      }
+    }
+    &:nth-child(3) {
+      margin-top: 120px;
+      height: 320px;
+      margin-left: auto;
+      @include laptop-min {
+        display: none;
+      }
+    }
+  }
+  &__nav {
+    max-width: 800px;
+    margin: 80px auto 0px auto;
+    @include tablet {
+      @include flex-center;
+      margin-top: 60px;
+    }
+  
+    .btn-main {
+      width: fit-content;
+    }
+  }
+}

@@ -12,6 +12,7 @@
     font-size: 86px;
     font-weight: 300;
     line-height: 80px;
+    max-width: 1000px;
     text-align: center;
     margin: 0;
 
@@ -22,6 +23,19 @@
     @include tablet {
       font-size: 38px;
       line-height: 40px;
+    }
+
+    &._min {
+      font-size: 76px;
+      line-height: 76px;
+      @include laptop-middle {
+        font-size: 54px;
+        line-height: 60px;
+      }
+      @include tablet {
+        font-size: 38px;
+        line-height: 40px;
+      }
     }
   }
   &__btn {
@@ -39,6 +53,37 @@
       margin-top: 30px;
       font-size: 14px;
       line-height: 18px;
+    }
+  }
+  &__tags {
+    @include flex-center;
+    gap: 6px;
+    margin-top: 45px;
+
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.96px;
+    text-transform: uppercase;
+    @include tablet {
+      margin-top: 32px;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.84px;
+    }
+
+    div {
+      width: 9px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: currentColor;
+    }
+  }
+  &__img {
+    width: 980px;
+    height: auto;
+    margin-top: 100px;
+    @include tablet {
+      margin-top: 60px;
     }
   }
 }
