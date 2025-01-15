@@ -114,6 +114,7 @@ export default function sliders() {
       },
     });
   }
+
   const socialSlider = document.querySelector(".social__slider");
 
   if (socialSlider) {
@@ -133,6 +134,44 @@ export default function sliders() {
       breakpoints: {
         744: {
           spaceBetween: 8,
+        },
+      },
+    });
+  }
+
+  const videoAboutSlider = document.querySelector(".video-about__slider");
+
+  if (videoAboutSlider) {
+    const swiper = new Swiper(videoAboutSlider, {
+      speed: 1000,
+      modules: [Autoplay, Navigation],
+      slidesPerView: "auto",
+      initialSlide: 2,
+      spaceBetween: 16,
+      grabCursor: true,
+      centeredSlides: true,
+      // autoplay: {
+      //   delay: 3500,
+      // },
+      navigation: {
+        prevEl: ".video-about .slider-btn._prev",
+        nextEl: ".video-about .slider-btn._next",
+      },
+      breakpoints: {
+        1360: {
+          spaceBetween: 60,
+          slidesPerView: 3,
+          centeredSlides: false,
+        },
+        1024: {
+          spaceBetween: 30,
+          slidesPerView: 3,
+          centeredSlides: false,
+        },
+        577: {
+          slidesPerView: 2,
+          initialSlide: 1,
+          centeredSlides: false,
         },
       },
     });

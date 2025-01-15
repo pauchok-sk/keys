@@ -11,4 +11,21 @@
     max-width: 1000px;
     margin: 0 auto;
   }
+  &__logos {
+    @include flex-center;
+    flex-wrap: wrap;
+    gap: 80px;
+    row-gap: 40px;
+    margin-top: 60px;
+    @include tablet {
+      gap: 16px;
+      margin-top: 40px;
+    }
+  }
+  &__logo {
+    width: 160px;
+    @include tablet {
+      width: 120px;
+    }
+  }
 }

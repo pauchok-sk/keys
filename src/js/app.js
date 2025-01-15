@@ -12,6 +12,8 @@ import more from "./files/more.js";
 import map from "./files/map.js";
 import rating from "./files/rating.js";
 import advatarLoad from "./files/avatarLoad.js";
+import anchors from "./files/anchors.js";
+import formSelect from "./files/formSelect.js";
 
 functions.mediaAdaptive();
 spoller();
@@ -25,3 +27,5 @@ more();
 map();
 rating();
 advatarLoad();
+anchors();
+formSelect();

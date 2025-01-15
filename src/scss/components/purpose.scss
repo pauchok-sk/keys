@@ -90,7 +90,7 @@
     @include tablet {
       flex: 1;
       font-size: 14px;
-      line-height: 20px; 
+      line-height: 20px;
       letter-spacing: 0.84px;
     }
   }
@@ -118,9 +118,27 @@
     @include laptop-min {
       position: static;
       transform: translate(0, 0);
-      margin: 0px auto 45px auto;
+      margin: 0px auto;
       width: 295px;
       height: 296px;
+    }
+
+    .tag {
+      font-size: 12px;
+      line-height: 20px;
+      letter-spacing: 0.72px;
+      margin-bottom: 15px;
+    }
+    .title {
+      margin: 0;
+      max-width: 310px;
+      line-height: 40px;
+      @include tablet {
+        line-height: 32px;
+      }
+      @include mobile {
+        max-width: 215px
+      }
     }
   }
   &__circle-wrapper {

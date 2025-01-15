@@ -59,12 +59,71 @@
     }
   }
   &__item {
-    flex: 0 1 calc(50% - 20px);
+    position: relative;
+    flex: 1;
     &:last-child {
       flex-basis: 100%;
     }
     @include tablet {
       flex-basis: 100%;
+    }
+
+    &._select-open {
+      .form__select-arrow {
+        transform: rotate(180deg);
+      }
+      .form__select-list {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+      }
+    }
+  }
+  &__select-btn {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    inset: 0;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  &__select-arrow {
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin-left: auto;
+    transition: transform .2s ease;
+  }
+  &__select-list {
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: var(--bg);
+    border: 1px solid black;
+    margin-top: 5px;
+    z-index: 10;
+
+    transform: translateY(30px);
+    opacity: 0;
+    visibility: hidden;
+
+    transition: opacity .4s ease, visibility .4s ease, transform .4s ease;
+
+    li {
+      font-size: 16px;
+      line-height: 22px;
+      padding: 10px 15px;
+      cursor: pointer;
+      transition: background-color .2s ease;
+      @include hover {
+        background-color: var(--main);
+      }
+
+      &:not(:last-child) {
+        border-bottom: 1px solid black;
+      }
     }
   }
   &__policy {

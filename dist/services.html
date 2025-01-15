@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>pauchoo0k</title>
+	<meta charset="UTF-8" />
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap&_v=20250115185307" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap&_v=20250115185307" rel="stylesheet" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20250115185307" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body class="body">
+	<header class="header">
+		<div class="header__container">
+			<a href="/" class="header__logo">
+				<img src="img/logo.svg" alt="logo" class="header__logo-img" />
+			</a>
+			<nav class="header__nav">
+				<div class="header__burger-nav">
+					<button class="btn-clear header__burger-btn" id="burger-btn">
+						<svg class="header__burger-icon">
+							<use xlink:href="img/icons/icons.svg#icon-burger"></use>
+						</svg>
+						<svg class="header__burger-icon">
+							<use xlink:href="img/icons/icons.svg#icon-close"></use>
+						</svg>
+					</button>
+					<a href="#" target="_blank" class="header__inst">
+						<svg class="header__inst-icon">
+							<use xlink:href="img/icons/icons.svg#icon-inst"></use>
+						</svg>
+						<span>na_klavishah</span>
+					</a>
+				</div>
+				<ul class="list header__list">
+					<li>
+						<a href="#">
+							<span class="number">1</span>
+							<span>Услуги</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="number">2</span>
+							<span>Наши работы</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="number">3</div>
+							<span>Цены</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="number">4</div>
+							<span>Акции</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="number">5</div>
+							<span>Контакты</span>
+						</a>
+					</li>
+				</ul>
+				<div class="header__contacts">
+					<a href="tel:+79186760074" class="header__tel">+7 (918) 676‒00‒74</a>
+					<p class="header__contacts-content">Ежедневно:с 09:00 до 21:00</p>
+				</div>
+				<a href="tel:+79186760074" class="header__tel-mobile">
+					<svg class="header__tel-icon">
+						<use xlink:href="img/icons/icons.svg#icon-tel"></use>
+					</svg>
+				</a>
+			</nav>
+			<button class="btn-main header__btn">
+				<span>Записаться</span>
+				<svg class="btn-main__icon">
+					<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+				</svg>
+			</button>
+		</div>
+	</header>
+
+	<div class="burger" id="burger">
+		<div class="burger__column" id="sections">
+			<span class="burger__column-title">Разделы</span>
+			<button class="btn-clear burger__services-btn" id="services-open">
+				<span>Услуги</span>
+				<svg class="burger__services-btn-arrow">
+					<use xlink:href='img/icons/icons.svg#icon-arrow'></use>
+				</svg>
+			</button>
+			<ul class="list burger__list">
+				<li>
+					<a href="#">Наши работы</a>
+				</li>
+				<li>
+					<a href="#">Наши работы</a>
+				</li>
+				<li>
+					<a href="#">Наши работы</a>
+				</li>
+				<li>
+					<a href="#">Наши работы</a>
+				</li>
+				<li>
+					<a href="#">Наши работы</a>
+				</li>
+				<li>
+					<a href="#">Наши работы</a>
+				</li>
+				<li>
+					<a href="#">Наши работы</a>
+				</li>
+			</ul>
+		</div>
+		<div class="burger__column" id="services">
+			<span class="burger__column-title">
+				Услуги
+			</span>
+			<button class="btn-clear burger__prev" id="sections-open">
+				<svg class="burger__prev-icon">
+					<use xlink:href='img/icons/icons.svg#icon-arrow-line'></use>
+				</svg>
+				<span>Назад</span>
+			</button>
+			<ul class="list burger__list">
+				<li>
+					<a href="#">Маникюр</a>
+				</li>
+				<li>
+					<a href="#">Наши работы</a>
+				</li>
+				<li>
+					<a href="#">Наши работы</a>
+				</li>
+				<li>
+					<a href="#">Наши работы</a>
+				</li>
+				<li>
+					<a href="#">Наши работы</a>
+				</li>
+				<li>
+					<a href="#">Наши работы</a>
+				</li>
+				<li>
+					<a href="#">Наши работы</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="stock remove">
+		<div class="stock__head">
+			<h5 class="stock__title">Акция</h5>
+			<button class="btn-remove btn-clear stock__close">
+				<span>Закрыть</span>
+				<svg class="stock__close-icon">
+					<use xlink:href="img/icons/icons.svg#icon-close-circle"></use>
+				</svg>
+			</button>
+		</div>
+		<div class="stock__body">
+			<h3 class="title title-3 stock__main-title">
+				Педикюр с покрытие гель-лак Polacco по специальной цене 2 300₽
+			</h3>
+			<p class="stock__content">
+				Ногтевая студия «На клавишах» предлагаем своим клиентам, новую акцию!
+			</p>
+			<a href="#" class="btn-main stock__btn">
+				<span>Подробнее</span>
+				<svg class="btn-main__icon">
+					<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+				</svg>
+			</a>
+		</div>
+	</div>
+
+	<button class="btn-clear online-record">
+		<div class="online-record__wrapper">
+			<span>Онлайн запись</span>
+		</div>
+	</button>
+	<main>
+
+		<section class="intro-simple">
+			<div class="container intro-simple__container">
+				<div class="breadcrumbs">
+					<div class="aioseo-breadcrumbs">
+						<span class="aioseo-breadcrumb">
+							<a href="/" title="Главная">Главная</a>
+						</span>
+						<span class="aioseo-breadcrumb">Услуги</span>
+					</div>
+				</div>
+				<h1 class="title intro-simple__title">Услуги</h1>
+				<button class="btn-main intro-simple__btn">
+					<span>Записаться</span>
+					<svg class="btn-main__icon">
+						<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+					</svg>
+				</button>
+			</div>
+		</section>
+
+		<section class="services">
+			<div class="tab-container">
+				<div class="services__nav scrollable">
+					<div data-tab-btn="services-1" class="services__tab-btn _active">
+						<div class="services__btn-head">
+							<h5 class="title title-2">Ногтевой сервис</h5>
+							<span class="services__number number">4</span>
+						</div>
+						<p class="services__btn-content">Любой сложности</p>
+					</div>
+					<div data-tab-btn="services-2" class="services__tab-btn">
+						<div class="services__btn-head">
+							<h5 class="title title-2">Бьюти</h5>
+							<span class="services__number number">4</span>
+						</div>
+						<p class="services__btn-content">Новейшие тренды</p>
+					</div>
+					<div data-tab-btn="services-3" class="services__tab-btn">
+						<div class="services__btn-head">
+							<h5 class="title title-2">Все услуги</h5>
+							<span class="services__number number">4</span>
+						</div>
+						<p class="services__btn-content">Современные техники</p>
+					</div>
+				</div>
+				<div data-tab="services-1" class="_open">
+					<div class="services__wrapper">
+						<article class="services__article">
+							<img src="img/services.webp" alt="image" class="services__slide-img" />
+							<span class="services__slide-number">38 видов</span>
+							<h5 class="title title-4 services__slide-title">Маникюр</h5>
+							<a href="#" class="btn-main">
+								<span>Записаться</span>
+								<svg class="btn-main__icon">
+									<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+								</svg>
+							</a>
+						</article>
+						<article class="services__article">
+							<img src="img/services.webp" alt="image" class="services__slide-img" />
+							<span class="services__slide-number">38 видов</span>
+							<h5 class="title title-4 services__slide-title">
+								Маникюр и педикюр в 4 руки
+							</h5>
+							<a href="#" class="btn-main">
+								<span>Записаться</span>
+								<svg class="btn-main__icon">
+									<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+								</svg>
+							</a>
+						</article>
+						<article class="services__article">
+							<img src="img/services.webp" alt="image" class="services__slide-img" />
+							<span class="services__slide-number">38 видов</span>
+							<h5 class="title title-4 services__slide-title">Маникюр</h5>
+							<a href="#" class="btn-main">
+								<span>Записаться</span>
+								<svg class="btn-main__icon">
+									<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+								</svg>
+							</a>
+						</article>
+						<article class="services__article">
+							<img src="img/services.webp" alt="image" class="services__slide-img" />
+							<span class="services__slide-number">38 видов</span>
+							<h5 class="title title-4 services__slide-title">
+								Маникюр и педикюр в 4 руки
+							</h5>
+							<a href="#" class="btn-main">
+								<span>Записаться</span>
+								<svg class="btn-main__icon">
+									<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+								</svg>
+							</a>
+						</article>
+						<article class="services__article">
+							<img src="img/services.webp" alt="image" class="services__slide-img" />
+							<span class="services__slide-number">38 видов</span>
+							<h5 class="title title-4 services__slide-title">Маникюр</h5>
+							<a href="#" class="btn-main">
+								<span>Записаться</span>
+								<svg class="btn-main__icon">
+									<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+								</svg>
+							</a>
+						</article>
+						<article class="services__article">
+							<img src="img/services.webp" alt="image" class="services__slide-img" />
+							<span class="services__slide-number">38 видов</span>
+							<h5 class="title title-4 services__slide-title">
+								Маникюр и педикюр в 4 руки
+							</h5>
+							<a href="#" class="btn-main">
+								<span>Записаться</span>
+								<svg class="btn-main__icon">
+									<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+								</svg>
+							</a>
+						</article>
+					</div>
+				</div>
+				<div data-tab="services-2">
+					<div class="services__wrapper">
+						<article class="services__article">
+							<img src="img/services.webp" alt="image" class="services__slide-img" />
+							<span class="services__slide-number">38 видов</span>
+							<h5 class="title title-4 services__slide-title">Маникюр</h5>
+							<a href="#" class="btn-main">
+								<span>Записаться</span>
+								<svg class="btn-main__icon">
+									<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+								</svg>
+							</a>
+						</article>
+						<article class="services__article">
+							<img src="img/services.webp" alt="image" class="services__slide-img" />
+							<span class="services__slide-number">38 видов</span>
+							<h5 class="title title-4 services__slide-title">
+								Маникюр и педикюр в 4 руки
+							</h5>
+							<a href="#" class="btn-main">
+								<span>Записаться</span>
+								<svg class="btn-main__icon">
+									<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+								</svg>
+							</a>
+						</article>
+						<article class="services__article">
+							<img src="img/services.webp" alt="image" class="services__slide-img" />
+							<span class="services__slide-number">38 видов</span>
+							<h5 class="title title-4 services__slide-title">Маникюр</h5>
+							<a href="#" class="btn-main">
+								<span>Записаться</span>
+								<svg class="btn-main__icon">
+									<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+								</svg>
+							</a>
+						</article>
+						<article class="services__article">
+							<img src="img/services.webp" alt="image" class="services__slide-img" />
+							<span class="services__slide-number">38 видов</span>
+							<h5 class="title title-4 services__slide-title">
+								Маникюр и педикюр в 4 руки
+							</h5>
+							<a href="#" class="btn-main">
+								<span>Записаться</span>
+								<svg class="btn-main__icon">
+									<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+								</svg>
+							</a>
+						</article>
+						<article class="services__article">
+							<img src="img/services.webp" alt="image" class="services__slide-img" />
+							<span class="services__slide-number">38 видов</span>
+							<h5 class="title title-4 services__slide-title">Маникюр</h5>
+							<a href="#" class="btn-main">
+								<span>Записаться</span>
+								<svg class="btn-main__icon">
+									<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+								</svg>
+							</a>
+						</article>
+						<article class="services__article">
+							<img src="img/services.webp" alt="image" class="services__slide-img" />
+							<span class="services__slide-number">38 видов</span>
+							<h5 class="title title-4 services__slide-title">
+								Маникюр и педикюр в 4 руки
+							</h5>
+							<a href="#" class="btn-main">
+								<span>Записаться</span>
+								<svg class="btn-main__icon">
+									<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+								</svg>
+							</a>
+						</article>
+						<article class="services__article">
+							<img src="img/services.webp" alt="image" class="services__slide-img" />
+							<span class="services__slide-number">38 видов</span>
+							<h5 class="title title-4 services__slide-title">
+								Маникюр и педикюр в 4 руки
+							</h5>
+							<a href="#" class="btn-main">
+								<span>Записаться</span>
+								<svg class="btn-main__icon">
+									<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+								</svg>
+							</a>
+						</article>
+					</div>
+				</div>
+				<div data-tab="services-3">
+					<div class="services__wrapper">
+						<article class="services__article">
+							<img src="img/services.webp" alt="image" class="services__slide-img" />
+							<span class="services__slide-number">38 видов</span>
+							<h5 class="title title-4 services__slide-title">Маникюр</h5>
+							<a href="#" class="btn-main">
+								<span>Записаться</span>
+								<svg class="btn-main__icon">
+									<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+								</svg>
+							</a>
+						</article>
+						<article class="services__article">
+							<img src="img/services.webp" alt="image" class="services__slide-img" />
+							<span class="services__slide-number">38 видов</span>
+							<h5 class="title title-4 services__slide-title">
+								Маникюр и педикюр в 4 руки
+							</h5>
+							<a href="#" class="btn-main">
+								<span>Записаться</span>
+								<svg class="btn-main__icon">
+									<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+								</svg>
+							</a>
+						</article>
+						<article class="services__article">
+							<img src="img/services.webp" alt="image" class="services__slide-img" />
+							<span class="services__slide-number">38 видов</span>
+							<h5 class="title title-4 services__slide-title">Маникюр</h5>
+							<a href="#" class="btn-main">
+								<span>Записаться</span>
+								<svg class="btn-main__icon">
+									<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+								</svg>
+							</a>
+						</article>
+						<article class="services__article">
+							<img src="img/services.webp" alt="image" class="services__slide-img" />
+							<span class="services__slide-number">38 видов</span>
+							<h5 class="title title-4 services__slide-title">
+								Маникюр и педикюр в 4 руки
+							</h5>
+							<a href="#" class="btn-main">
+								<span>Записаться</span>
+								<svg class="btn-main__icon">
+									<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+								</svg>
+							</a>
+						</article>
+						<article class="services__article">
+							<img src="img/services.webp" alt="image" class="services__slide-img" />
+							<span class="services__slide-number">38 видов</span>
+							<h5 class="title title-4 services__slide-title">Маникюр</h5>
+							<a href="#" class="btn-main">
+								<span>Записаться</span>
+								<svg class="btn-main__icon">
+									<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+								</svg>
+							</a>
+						</article>
+						<article class="services__article">
+							<img src="img/services.webp" alt="image" class="services__slide-img" />
+							<span class="services__slide-number">38 видов</span>
+							<h5 class="title title-4 services__slide-title">
+								Маникюр и педикюр в 4 руки
+							</h5>
+							<a href="#" class="btn-main">
+								<span>Записаться</span>
+								<svg class="btn-main__icon">
+									<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+								</svg>
+							</a>
+						</article>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="portfolio">
+			<div class="container">
+				<div class="portfolio__head">
+					<button class="slider-btn _prev">
+						<svg class="slider-btn__icon">
+							<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+						</svg>
+					</button>
+					<div class="portfolio__head-middle">
+						<span class="tag">Наши работы</span>
+						<h2 class="title title-2 portfolio__title">
+							Помогаем создать неповторимый образ
+						</h2>
+					</div>
+					<button class="slider-btn _next">
+						<svg class="slider-btn__icon">
+							<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+						</svg>
+					</button>
+				</div>
+			</div>
+			<div class="swiper portfolio__slider">
+				<div class="swiper-wrapper">
+					<a href="img/portfolio.webp" data-fancybox="porfolio" class="swiper-slide">
+						<img src="img/portfolio.webp" alt="" class="portfolio__slider-img" />
+					</a>
+					<a href="img/portfolio.webp" data-fancybox="porfolio" class="swiper-slide">
+						<img src="img/portfolio.webp" alt="" class="portfolio__slider-img" />
+					</a>
+					<a href="img/portfolio.webp" data-fancybox="porfolio" class="swiper-slide">
+						<img src="img/portfolio.webp" alt="" class="portfolio__slider-img" />
+					</a>
+					<a href="img/portfolio.webp" data-fancybox="porfolio" class="swiper-slide">
+						<img src="img/portfolio.webp" alt="" class="portfolio__slider-img" />
+					</a>
+					<a href="img/portfolio.webp" data-fancybox="porfolio" class="swiper-slide">
+						<img src="img/portfolio.webp" alt="" class="portfolio__slider-img" />
+					</a>
+					<a href="img/portfolio.webp" data-fancybox="porfolio" class="swiper-slide">
+						<img src="img/portfolio.webp" alt="" class="portfolio__slider-img" />
+					</a>
+					<a href="img/portfolio.webp" data-fancybox="porfolio" class="swiper-slide">
+						<img src="img/portfolio.webp" alt="" class="portfolio__slider-img" />
+					</a>
+
+					<a href="img/portfolio.webp" data-fancybox="porfolio" class="swiper-slide">
+						<img src="img/portfolio.webp" alt="" class="portfolio__slider-img" />
+					</a>
+				</div>
+			</div>
+			<a href="#" class="btn-main portfolio__btn-all">
+				<span>Все работы</span>
+				<svg class="btn-main__icon">
+					<use xlink:href='img/icons/icons.svg#icon-arrow'></use>
+				</svg>
+			</a>
+		</section>
+
+		<section class="sect-img">
+			<div class="sect-img__container tab-container">
+				<div class="sect-img__info reviews__info">
+					<span class="tag">Отзывы</span>
+					<h2 class="title title-3 sect-img__title">
+						Спасибо за доверие, которое вы оказываете нам, и мы стараемся не
+						разочаровать вас
+					</h2>
+					<div class="sect-img__buttons">
+						<button data-tab-btn="p-1" data-img="img/reviews.webp" class="btn-clear sect-img__btn _active">
+							<div class="sect-img__btn-gallery">
+								<img src="img/reviews-avatar.webp" alt="icon" class="sect-img__btn-icon" />
+							</div>
+							<span>Алена</span>
+						</button>
+						<button data-tab-btn="p-2" data-img="img/atmosphere.webp" class="btn-clear sect-img__btn">
+							<div class="sect-img__btn-gallery">
+								<img src="img/reviews-avatar.webp" alt="icon" class="sect-img__btn-icon" />
+							</div>
+							<span>Екатерина</span>
+						</button>
+						<button data-tab-btn="p-3" data-img="img/reviews.webp" class="btn-clear sect-img__btn">
+							<div class="sect-img__btn-gallery">
+								<img src="img/reviews-avatar.webp" alt="icon" class="sect-img__btn-icon" />
+							</div>
+							<span>Анастасия</span>
+						</button>
+						<button data-tab-btn="p-4" data-img="img/atmosphere.webp" class="btn-clear sect-img__btn">
+							<div class="sect-img__btn-gallery">
+								<img src="img/reviews-avatar.webp" alt="icon" class="sect-img__btn-icon" />
+							</div>
+							<span>Виктория</span>
+						</button>
+					</div>
+					<div data-tab="p-1" data-img="img/reviews.webp" class="_open">
+						<p class="sect-img__tab-content">
+							“Осталась очень довольна работой мастеров салона «На Клавишах»,
+							сделали просто восхитительный маникюр, за очень короткое время!”
+						</p>
+					</div>
+					<div data-tab="p-2">
+						<p class="sect-img__tab-content">
+							22222“Осталась очень довольна работой мастеров салона «На Клавишах»,
+							сделали просто восхитительный маникюр, за очень короткое время!”
+						</p>
+					</div>
+					<div data-tab="p-3">
+						<p class="sect-img__tab-content">
+							33333“Осталась очень довольна работой мастеров салона «На Клавишах»,
+							сделали просто восхитительный маникюр, за очень короткое время!”
+						</p>
+					</div>
+					<div data-tab="p-4">
+						<p class="sect-img__tab-content">
+							33333“Осталась очень довольна работой мастеров салона «На Клавишах»,
+							сделали просто восхитительный маникюр, за очень короткое время!”
+						</p>
+					</div>
+					<a href="#" class="btn-main sect-img__btn-bottom">
+						<span>Все отзывы</span>
+						<svg class="btn-main__icon">
+							<use xlink:href='img/icons/icons.svg#icon-arrow'></use>
+						</svg>
+					</a>
+				</div>
+				<img data-da=".reviews__info,1024,2" src="img/reviews.webp" data-tab-img alt="image" class="sect-img__img" />
+			</div>
+		</section>
+
+		<section class="simple">
+			<div class="container simple__container tab-container">
+				<div data-da=".webpts__main,1024,2" class="simple__gallery">
+					<img data-tab-img alt="image" class="simple__img" />
+				</div>
+				<div class="simple__main.webpts__main">
+					<span class="tag">Подарочные сертификаты</span>
+					<h2 class="title title-3 simple__title">
+						Лучший подарок-это впечатления, а наши подарочные сертификаты
+						гарантировано дарят эмоции
+					</h2>
+					<div class="simple__buttons">
+						<button data-tab-btn="at-1" data-img="img.webpt.webp" class="btn-clear simple__btn _active">
+							<span class="number">1</span>
+							<div class="simple__btn-gallery">
+								<img src="img/atmosphere-btn.webp" alt="icon" class="simple__btn-icon" />
+							</div>
+							<span>Электронный сертификат</span>
+						</button>
+						<button data-tab-btn="at-2" data-img="img/purity.webp" class="btn-clear simple__btn">
+							<span class="number">2</span>
+							<div class="simple__btn-gallery">
+								<img src="img/atmosphere-btn.webp" alt="icon" class="simple__btn-icon" />
+							</div>
+							<span>БУМАЖНЫЙ сертификат</span>
+						</button>
+					</div>
+					<div data-tab="at-1" class="_open">
+						<p class="simple__tab-content">
+							Хотите сделать сюрприз близкому человеку, даже если вы далеко? Мы
+							отправим ваше теплое послание и электронный подарочный сертификат в
+							нужное время, где бы вы не находились.
+						</p>
+						<button class="btn-main simple__tab-btn">
+							<span>Оставить заявку</span>
+							<svg class="btn-main__icon">
+								<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+							</svg>
+						</button>
+					</div>
+					<div data-tab="at-2">
+						<p class="simple__tab-content">
+							22222В нашем баре вы найдете всё для вашего удовольствия: от
+							ароматного кофе и чая до освежающих фрешей, авторских коктейлей 18+ и
+							нежных молочных коктейлей. А для ценителей сладкого – наши фирменные
+							сырники! Все напитки – комплемент от нашего салона.
+						</p>
+						<button class="btn-main simple__tab-btn">
+							<span>Оставить заявку</span>
+							<svg class="btn-main__icon">
+								<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+							</svg>
+						</button>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+	</main>
+	<footer class="footer">
+		<div class="footer__container">
+			<div class="footer__main">
+				<a href="/" class="footer__logo">
+					<img src="img/logo-big.svg" alt="logo" class="footer__logo-img" />
+				</a>
+				<span class="tag footer__tag">Пространство красоты </span>
+			</div>
+			<nav data-spollers="743,max" data-one-spoller class="footer__nav">
+				<div class="footer__column">
+					<span class="btn-clear footer__column-title"> Информация </span>
+					<ul class="list footer__list-contacts">
+						<li>
+							<svg class="footer__contacts-icon">
+								<use xlink:href="img/icons/icons.svg#icon-tel-flip"></use>
+							</svg>
+							<a href="tel:+79186760074">+7 (918) 676-00-74</a>
+						</li>
+						<li>
+							<svg class="footer__contacts-icon">
+								<use xlink:href="img/icons/icons.svg#icon-message"></use>
+							</svg>
+							<a href="mailto:info@na-klavishah.ru">info@na-klavishah.ru</a>
+						</li>
+						<li>
+							<svg class="footer__contacts-icon">
+								<use xlink:href="img/icons/icons.svg#icon-location"></use>
+							</svg>
+							<span>Адреса наших салонов</span>
+						</li>
+						<li>
+							<svg class="footer__contacts-icon">
+								<use xlink:href="img/icons/icons.svg#icon-clock"></use>
+							</svg>
+							<span>Ежедневно: с 09:00 до 21:00</span>
+						</li>
+						<li>
+							<svg class="footer__contacts-icon">
+								<use xlink:href="img/icons/icons.svg#icon-users"></use>
+							</svg>
+							<a href="#">
+								<span>Вакансии</span>
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+					<ul class="list footer__social">
+						<li>
+							<a href="#" target="_blank" class="footer__social-btn">
+								<img src="img/inst.svg" alt="icon" class="footer__social-icon" />
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank" class="footer__social-btn">
+								<img src="img/vk.svg" alt="icon" class="footer__social-icon" />
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank" class="footer__social-btn">
+								<img src="img/wh.svg" alt="icon" class="footer__social-icon" />
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__column">
+					<button data-spoller class="btn-clear btn-clear footer__column-title">
+						<span>Услуги</span>
+						<svg class="footer__column-arrow">
+							<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+						</svg>
+					</button>
+					<ul class="list footer__list">
+						<li>
+							<a href="#">
+								<span>Маникюр</span>
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span>Маникюр и педикюр в 4 руки </span>
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span>Маникюр</span>
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span>Маникюр и педикюр в 4 руки </span>
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span>Маникюр</span>
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span>Маникюр и педикюр в 4 руки </span>
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span>Маникюр</span>
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span>Маникюр и педикюр в 4 руки </span>
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__column">
+					<button data-spoller="743" class="btn-clear btn-clear footer__column-title">
+						<span>Разделы</span>
+						<svg class="footer__column-arrow">
+							<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+						</svg>
+					</button>
+					<ul class="list footer__list">
+						<li>
+							<a href="#">
+								<span>Маникюр</span>
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span>Маникюр и педикюр в 4 руки </span>
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span>Маникюр</span>
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span>Маникюр и педикюр в 4 руки </span>
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span>Маникюр</span>
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span>Маникюр и педикюр в 4 руки </span>
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span>Маникюр</span>
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span>Маникюр и педикюр в 4 руки </span>
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<div class="footer__bottom">
+			<div class="container footer__bottom-container">
+				<p class="footer__copyright">©2023 «На клавишах».</p>
+				<a href="#" class="footer__policy">Политика конфиденциальности.</a>
+				<div class="footer__created">
+					<span>Created by </span>
+					<a href="#" target="_blank">DragoWeb</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="js/app.min.js?_v=20250115185307"></script>
+</body>
+
+</html>

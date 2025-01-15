@@ -1,0 +1,779 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>pauchoo0k</title>
+	<meta charset="UTF-8" />
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap&_v=20250115185307" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap&_v=20250115185307" rel="stylesheet" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20250115185307" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body class="body">
+	<header class="header">
+		<div class="header__container">
+			<a href="/" class="header__logo">
+				<img src="img/logo.svg" alt="logo" class="header__logo-img" />
+			</a>
+			<nav class="header__nav">
+				<div class="header__burger-nav">
+					<button class="btn-clear header__burger-btn" id="burger-btn">
+						<svg class="header__burger-icon">
+							<use xlink:href="img/icons/icons.svg#icon-burger"></use>
+						</svg>
+						<svg class="header__burger-icon">
+							<use xlink:href="img/icons/icons.svg#icon-close"></use>
+						</svg>
+					</button>
+					<a href="#" target="_blank" class="header__inst">
+						<svg class="header__inst-icon">
+							<use xlink:href="img/icons/icons.svg#icon-inst"></use>
+						</svg>
+						<span>na_klavishah</span>
+					</a>
+				</div>
+				<ul class="list header__list">
+					<li>
+						<a href="#">
+							<span class="number">1</span>
+							<span>Услуги</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="number">2</span>
+							<span>Наши работы</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="number">3</div>
+							<span>Цены</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="number">4</div>
+							<span>Акции</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="number">5</div>
+							<span>Контакты</span>
+						</a>
+					</li>
+				</ul>
+				<div class="header__contacts">
+					<a href="tel:+79186760074" class="header__tel">+7 (918) 676‒00‒74</a>
+					<p class="header__contacts-content">Ежедневно:с 09:00 до 21:00</p>
+				</div>
+				<a href="tel:+79186760074" class="header__tel-mobile">
+					<svg class="header__tel-icon">
+						<use xlink:href="img/icons/icons.svg#icon-tel"></use>
+					</svg>
+				</a>
+			</nav>
+			<button class="btn-main header__btn">
+				<span>Записаться</span>
+				<svg class="btn-main__icon">
+					<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+				</svg>
+			</button>
+		</div>
+	</header>
+
+	<div class="burger" id="burger">
+		<div class="burger__column" id="sections">
+			<span class="burger__column-title">Разделы</span>
+			<button class="btn-clear burger__services-btn" id="services-open">
+				<span>Услуги</span>
+				<svg class="burger__services-btn-arrow">
+					<use xlink:href='img/icons/icons.svg#icon-arrow'></use>
+				</svg>
+			</button>
+			<ul class="list burger__list">
+				<li>
+					<a href="#">Наши работы</a>
+				</li>
+				<li>
+					<a href="#">Наши работы</a>
+				</li>
+				<li>
+					<a href="#">Наши работы</a>
+				</li>
+				<li>
+					<a href="#">Наши работы</a>
+				</li>
+				<li>
+					<a href="#">Наши работы</a>
+				</li>
+				<li>
+					<a href="#">Наши работы</a>
+				</li>
+				<li>
+					<a href="#">Наши работы</a>
+				</li>
+			</ul>
+		</div>
+		<div class="burger__column" id="services">
+			<span class="burger__column-title">
+				Услуги
+			</span>
+			<button class="btn-clear burger__prev" id="sections-open">
+				<svg class="burger__prev-icon">
+					<use xlink:href='img/icons/icons.svg#icon-arrow-line'></use>
+				</svg>
+				<span>Назад</span>
+			</button>
+			<ul class="list burger__list">
+				<li>
+					<a href="#">Маникюр</a>
+				</li>
+				<li>
+					<a href="#">Наши работы</a>
+				</li>
+				<li>
+					<a href="#">Наши работы</a>
+				</li>
+				<li>
+					<a href="#">Наши работы</a>
+				</li>
+				<li>
+					<a href="#">Наши работы</a>
+				</li>
+				<li>
+					<a href="#">Наши работы</a>
+				</li>
+				<li>
+					<a href="#">Наши работы</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="stock remove">
+		<div class="stock__head">
+			<h5 class="stock__title">Акция</h5>
+			<button class="btn-remove btn-clear stock__close">
+				<span>Закрыть</span>
+				<svg class="stock__close-icon">
+					<use xlink:href="img/icons/icons.svg#icon-close-circle"></use>
+				</svg>
+			</button>
+		</div>
+		<div class="stock__body">
+			<h3 class="title title-3 stock__main-title">
+				Педикюр с покрытие гель-лак Polacco по специальной цене 2 300₽
+			</h3>
+			<p class="stock__content">
+				Ногтевая студия «На клавишах» предлагаем своим клиентам, новую акцию!
+			</p>
+			<a href="#" class="btn-main stock__btn">
+				<span>Подробнее</span>
+				<svg class="btn-main__icon">
+					<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+				</svg>
+			</a>
+		</div>
+	</div>
+
+	<button class="btn-clear online-record">
+		<div class="online-record__wrapper">
+			<span>Онлайн запись</span>
+		</div>
+	</button>
+	<main>
+
+		<section class="intro-simple _bottom-no">
+			<div class="container intro-simple__container">
+				<div class="breadcrumbs">
+					<div class="aioseo-breadcrumbs">
+						<span class="aioseo-breadcrumb">
+							<a href="/" title="Главная">Главная</a>
+						</span>
+						<span class="aioseo-breadcrumb">
+							О салоне
+						</span>
+					</div>
+				</div>
+				<h1 class="title intro-simple__title">О Салоне “На клавишах” </h1>
+				<p class="intro-simple__content">Лучшее место на земле</p>
+				<img src="img/about.webp" alt="image" class="intro-simple__img _big">
+			</div>
+		</section>
+		<section class="intro-about">
+			<div class="container">
+				<p class="title title-3 intro-about__content">
+					На клавишах» – это сеть из 7 современных студий маникюра и педикюра в Краснодаре. За 8 лет мы не только создали прекрасные студии, но и построили крепкую команду, многие из которых работают с нами с самого открытия
+				</p>
+			</div>
+		</section>
+		<section class="simple">
+			<div class="container simple__container _stretch">
+				<div class="simple__main history__main">
+					<span class="tag">Наша история</span>
+					<h2 class="title title-3 simple__title">
+						История студии «На клавишах» началась в конце октября 2016 года, тогда
+						мы приняли своего первого гостя!
+					</h2>
+					<p class="simple__content">
+						Первый салон был расположен по адресу ул. Коммунаров, 268, именно этот салон стал нашим местом силы и роста! В 2017 году появился наш второй филиал. Мы работаем над созданием нашего собственного, уникального образа. Нашим мастерам под силу воплотить в жизнь любую дизайнерскую задумку, неважно будет это простой аппаратный маникюр или художественная роспись со стразами. В нашем салоне красоты в Краснодаре вы не заметите как пройдет время!
+					</p>
+				</div>
+				<div data-da=".history__main,1024,2" class="simple__gallery">
+					<img src="img/history.webp" alt="image" class="simple__img" />
+				</div>
+			</div>
+		</section>
+
+		<section class="video-about">
+			<div class="container">
+				<div class="video-about__head">
+					<button class="slider-btn _prev">
+						<svg class="slider-btn__icon">
+							<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+						</svg>
+					</button>
+					<div class="video-about__head-middle">
+						<span class="tag">Видео о нас</span>
+						<h2 class="title title-2 video-about__title">
+							Мы создаем красоту в атмосфере уюта
+						</h2>
+					</div>
+					<button class="slider-btn _next">
+						<svg class="slider-btn__icon">
+							<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="swiper video-about__slider">
+					<div class="swiper-wrapper">
+						<a href="https://www.youtube.com/watch?v=6FKtVHHypg0" data-fancybox="about" class="swiper-slide">
+							<div class="video-about__play-btn">
+								<svg class="video-about__play-icon">
+									<use xlink:href="img/icons/icons.svg#icon-play"></use>
+								</svg>
+							</div>
+							<img src="img/video-about.webp" alt="image" class="video-about__preview" />
+						</a>
+						<a href="https://www.youtube.com/watch?v=6FKtVHHypg0" data-fancybox="about" class="swiper-slide">
+							<div class="video-about__play-btn">
+								<svg class="video-about__play-icon">
+									<use xlink:href="img/icons/icons.svg#icon-play"></use>
+								</svg>
+							</div>
+							<img src="img/video-about.webp" alt="image" class="video-about__preview" />
+						</a>
+						<a href="https://www.youtube.com/watch?v=6FKtVHHypg0" data-fancybox="about" class="swiper-slide">
+							<div class="video-about__play-btn">
+								<svg class="video-about__play-icon">
+									<use xlink:href="img/icons/icons.svg#icon-play"></use>
+								</svg>
+							</div>
+							<img src="img/video-about.webp" alt="image" class="video-about__preview" />
+						</a>
+						<a href="https://www.youtube.com/watch?v=6FKtVHHypg0" data-fancybox="about" class="swiper-slide">
+							<div class="video-about__play-btn">
+								<svg class="video-about__play-icon">
+									<use xlink:href="img/icons/icons.svg#icon-play"></use>
+								</svg>
+							</div>
+							<img src="img/video-about.webp" alt="image" class="video-about__preview" />
+						</a>
+					</div>
+				</div>
+				<button class="btn-main video-about__btn">
+					<span>Записаться</span>
+					<svg class="btn-main__icon">
+						<use xlink:href='img/icons/icons.svg#icon-arrow'></use>
+					</svg>
+				</button>
+			</div>
+		</section>
+		<section class="sect-img">
+			<div class="sect-img__container tab-container">
+				<img data-da=".purity__info,1024,3" src="img/purity.webp" alt="image" class="sect-img__img" />
+				<div class="sect-img__info purity__info">
+					<span class="tag">стерилизация</span>
+					<h2 class="title title-3 sect-img__title">
+						Чтобы поддерживать чистоту инструментов мы используем трехступенчатую
+						технологию очистки
+					</h2>
+					<p class="sect-img__content">
+						мастер при вас вскрывает крафт-пакет с инструментами
+					</p>
+					<div class="sect-img__buttons">
+						<button data-tab-btn="p-1" class="btn-clear sect-img__btn _active">
+							<span class="number sect-img__btn-number">1</span>
+							<div class="sect-img__btn-gallery">
+								<img src="img/purity-item.webp" alt="icon" class="sect-img__btn-icon" />
+							</div>
+							<span>Механическая очистка</span>
+						</button>
+						<button data-tab-btn="p-2" class="btn-clear sect-img__btn">
+							<span class="number sect-img__btn-number">2</span>
+							<div class="sect-img__btn-gallery">
+								<img src="img/purity-item.webp" alt="icon" class="sect-img__btn-icon" />
+							</div>
+							<span>Механическая очистка</span>
+						</button>
+						<button data-tab-btn="p-3" class="btn-clear sect-img__btn">
+							<span class="number sect-img__btn-number">3</span>
+							<div class="sect-img__btn-gallery">
+								<img src="img/purity-item.webp" alt="icon" class="sect-img__btn-icon" />
+							</div>
+							<span>Механическая очистка</span>
+						</button>
+					</div>
+					<div data-tab="p-1" class="_open">
+						<p class="sect-img__tab-content">
+							На этом этапе весь инструмент очищенный от механических загрязнений
+							помещается в особый химический раствор, который за счет высокоактивных
+							реагентов полностью убивает вирусы и бактерии.
+						</p>
+					</div>
+					<div data-tab="p-2">
+						<p class="sect-img__tab-content">
+							22222На этом этапе весь инструмент очищенный от механических
+							загрязнений помещается в особый химический раствор, который за счет
+							высокоактивных реагентов полностью убивает вирусы и бактерии.
+						</p>
+					</div>
+					<div data-tab="p-3">
+						<p class="sect-img__tab-content">
+							33333На этом этапе весь инструмент очищенный от механических
+							загрязнений помещается в особый химический раствор, который за счет
+							высокоактивных реагентов полностью убивает вирусы и бактерии.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="purpose">
+			<div class="container">
+				<div class="purpose__body">
+					<div class="purpose__circle">
+						<div class="purpose__circle-wrapper">
+							<div class="purpose__points">
+								<div></div>
+								<div></div>
+							</div>
+							<div class="purpose__points">
+								<div></div>
+								<div></div>
+							</div>
+							<div class="purpose__points">
+								<div></div>
+								<div></div>
+							</div>
+							<div>
+								<span class="tag purpose__tag">Преимущества</span>
+								<h2 class="title title-3 purpose__title">
+									Ваша красота - наша главная цель!
+								</h2>
+							</div>
+						</div>
+					</div>
+					<div class="purpose__row">
+						<div class="purpose__item">
+							<h6 class="purpose__item-title">Запись через интернет</h6>
+							<p class="purpose__content">
+								Вы можете записаться к нам on-line 24 часа в сутки
+							</p>
+						</div>
+						<div class="purpose__item">
+							<h6 class="purpose__item-title">Опытные мастера</h6>
+							<p class="purpose__content">
+								У нас работают профессионалы с опытом более 8 лет
+							</p>
+						</div>
+					</div>
+					<div class="purpose__row">
+						<div class="purpose__item">
+							<h6 class="purpose__item-title">Одноразовые материалы</h6>
+							<p class="purpose__content">
+								Одноразовый набор пилок и бафов мастер открывает в вашем присутствии
+							</p>
+						</div>
+						<div class="purpose__item">
+							<h6 class="purpose__item-title">разнообразие покрытий</h6>
+							<p class="purpose__content">
+								Более 500 видов покрытий лаков и гель-лаков
+							</p>
+						</div>
+					</div>
+					<div class="purpose__row">
+						<div class="purpose__item">
+							<h6 class="purpose__item-title">Гарантия 7 дней</h6>
+							<p class="purpose__content">
+								Исправим любую возникшую проблему за наш счет
+							</p>
+						</div>
+						<div class="purpose__item">
+							<h6 class="purpose__item-title">Экономия времени</h6>
+							<p class="purpose__content">
+								Возможность выбрать подходящие процедуры в 4 руки
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="salons-gallery">
+			<div class="salons-gallery__head">
+				<span class="tag">Эстетика наших салонов</span>
+			</div>
+			<div class="container parent-more">
+				<div data-more="6" data-more-step="6" class="salons-gallery__body">
+					<a href="img/salons-gallery.webp" data-fancybox="gallery" class="salons-gallery__item">
+						<img src="img/salons-gallery.webp" alt="image" class="salons-gallery__img" />
+					</a>
+					<a href="img/salons-gallery.webp" data-fancybox="gallery" class="salons-gallery__item">
+						<img src="img/salons-gallery.webp" alt="image" class="salons-gallery__img" />
+					</a>
+					<a href="img/salons-gallery.webp" data-fancybox="gallery" class="salons-gallery__item">
+						<img src="img/salons-gallery.webp" alt="image" class="salons-gallery__img" />
+					</a>
+					<a href="img/salons-gallery.webp" data-fancybox="gallery" class="salons-gallery__item">
+						<img src="img/salons-gallery.webp" alt="image" class="salons-gallery__img" />
+					</a>
+					<a href="img/salons-gallery.webp" data-fancybox="gallery" class="salons-gallery__item">
+						<img src="img/salons-gallery.webp" alt="image" class="salons-gallery__img" />
+					</a>
+					<a href="img/salons-gallery.webp" data-fancybox="gallery" class="salons-gallery__item">
+						<img src="img/salons-gallery.webp" alt="image" class="salons-gallery__img" />
+					</a>
+					<a href="img/salons-gallery.webp" data-fancybox="gallery" class="salons-gallery__item">
+						<img src="img/salons-gallery.webp" alt="image" class="salons-gallery__img" />
+					</a>
+					<a href="img/salons-gallery.webp" data-fancybox="gallery" class="salons-gallery__item">
+						<img src="img/salons-gallery.webp" alt="image" class="salons-gallery__img" />
+					</a>
+					<a href="img/salons-gallery.webp" data-fancybox="gallery" class="salons-gallery__item">
+						<img src="img/salons-gallery.webp" alt="image" class="salons-gallery__img" />
+					</a>
+					<a href="img/salons-gallery.webp" data-fancybox="gallery" class="salons-gallery__item">
+						<img src="img/salons-gallery.webp" alt="image" class="salons-gallery__img" />
+					</a>
+					<a href="img/salons-gallery.webp" data-fancybox="gallery" class="salons-gallery__item">
+						<img src="img/salons-gallery.webp" alt="image" class="salons-gallery__img" />
+					</a>
+				</div>
+				<button data-more-btn class="btn-main salons-gallery__btn-more">Показать еще</button>
+			</div>
+		</section>
+
+		<section class="salons">
+			<div class="container">
+				<div class="salons__head">
+					<button class="slider-btn _prev">
+						<svg class="slider-btn__icon">
+							<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+						</svg>
+					</button>
+					<h2 class="tag salons__title">Наши салоны</h2>
+					<button class="slider-btn _next">
+						<svg class="slider-btn__icon">
+							<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+						</svg>
+					</button>
+				</div>
+			</div>
+			<div class="swiper salons__slider">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<span class="number salons__slide-numb">1</span>
+						<img src="img/salon.webp" alt="image" class="salons__slide-img" />
+						<h5 class="title title-4 salons__slide-title">ул. Коммунаров, 268</h5>
+						<a href="tel:+79186760074" class="salons__slide-tel">+7 (918) 676-00-74</a>
+						<p class="salons__slide-content">Ежедневно с 9:00 до 21:00</p>
+					</div>
+					<div class="swiper-slide">
+						<span class="number salons__slide-numb">1</span>
+						<img src="img/salon.webp" alt="image" class="salons__slide-img" />
+						<h5 class="title title-4 salons__slide-title">ул. Коммунаров, 268</h5>
+						<a href="tel:+79186760074" class="salons__slide-tel">+7 (918) 676-00-74</a>
+						<p class="salons__slide-content">Ежедневно с 9:00 до 21:00</p>
+					</div>
+					<div class="swiper-slide">
+						<span class="number salons__slide-numb">1</span>
+						<img src="img/salon.webp" alt="image" class="salons__slide-img" />
+						<h5 class="title title-4 salons__slide-title">ул. Коммунаров, 268</h5>
+						<a href="tel:+79186760074" class="salons__slide-tel">+7 (918) 676-00-74</a>
+						<p class="salons__slide-content">Ежедневно с 9:00 до 21:00</p>
+					</div>
+					<div class="swiper-slide">
+						<span class="number salons__slide-numb">1</span>
+						<img src="img/salon.webp" alt="image" class="salons__slide-img" />
+						<h5 class="title title-4 salons__slide-title">ул. Коммунаров, 268</h5>
+						<a href="tel:+79186760074" class="salons__slide-tel">+7 (918) 676-00-74</a>
+						<p class="salons__slide-content">Ежедневно с 9:00 до 21:00</p>
+					</div>
+					<div class="swiper-slide">
+						<span class="number salons__slide-numb">1</span>
+						<img src="img/salon.webp" alt="image" class="salons__slide-img" />
+						<h5 class="title title-4 salons__slide-title">ул. Коммунаров, 268</h5>
+						<a href="tel:+79186760074" class="salons__slide-tel">+7 (918) 676-00-74</a>
+						<p class="salons__slide-content">Ежедневно с 9:00 до 21:00</p>
+					</div>
+					<div class="swiper-slide">
+						<span class="number salons__slide-numb">1</span>
+						<img src="img/salon.webp" alt="image" class="salons__slide-img" />
+						<h5 class="title title-4 salons__slide-title">ул. Коммунаров, 268</h5>
+						<a href="tel:+79186760074" class="salons__slide-tel">+7 (918) 676-00-74</a>
+						<p class="salons__slide-content">Ежедневно с 9:00 до 21:00</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="intro-about">
+			<div class="container">
+				<p class="title title-3 intro-about__content">
+					Все процедуры и материалы в салоне красоты «На Клавишах» подбираются нашими мастерами исходя из ваших пожеланий и особенностей именно вашей кожи, поэтому мы можем гарантировать безупречный результат работы!
+				</p>
+				<div class="intro-about__logos">
+					<img src="img/logo-1.svg" alt="logo" class="intro-about__logo">
+					<img src="img/logo-2.svg" alt="logo" class="intro-about__logo">
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="footer">
+		<div class="footer__container">
+			<div class="footer__main">
+				<a href="/" class="footer__logo">
+					<img src="img/logo-big.svg" alt="logo" class="footer__logo-img" />
+				</a>
+				<span class="tag footer__tag">Пространство красоты </span>
+			</div>
+			<nav data-spollers="743,max" data-one-spoller class="footer__nav">
+				<div class="footer__column">
+					<span class="btn-clear footer__column-title"> Информация </span>
+					<ul class="list footer__list-contacts">
+						<li>
+							<svg class="footer__contacts-icon">
+								<use xlink:href="img/icons/icons.svg#icon-tel-flip"></use>
+							</svg>
+							<a href="tel:+79186760074">+7 (918) 676-00-74</a>
+						</li>
+						<li>
+							<svg class="footer__contacts-icon">
+								<use xlink:href="img/icons/icons.svg#icon-message"></use>
+							</svg>
+							<a href="mailto:info@na-klavishah.ru">info@na-klavishah.ru</a>
+						</li>
+						<li>
+							<svg class="footer__contacts-icon">
+								<use xlink:href="img/icons/icons.svg#icon-location"></use>
+							</svg>
+							<span>Адреса наших салонов</span>
+						</li>
+						<li>
+							<svg class="footer__contacts-icon">
+								<use xlink:href="img/icons/icons.svg#icon-clock"></use>
+							</svg>
+							<span>Ежедневно: с 09:00 до 21:00</span>
+						</li>
+						<li>
+							<svg class="footer__contacts-icon">
+								<use xlink:href="img/icons/icons.svg#icon-users"></use>
+							</svg>
+							<a href="#">
+								<span>Вакансии</span>
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+					<ul class="list footer__social">
+						<li>
+							<a href="#" target="_blank" class="footer__social-btn">
+								<img src="img/inst.svg" alt="icon" class="footer__social-icon" />
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank" class="footer__social-btn">
+								<img src="img/vk.svg" alt="icon" class="footer__social-icon" />
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank" class="footer__social-btn">
+								<img src="img/wh.svg" alt="icon" class="footer__social-icon" />
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__column">
+					<button data-spoller class="btn-clear btn-clear footer__column-title">
+						<span>Услуги</span>
+						<svg class="footer__column-arrow">
+							<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+						</svg>
+					</button>
+					<ul class="list footer__list">
+						<li>
+							<a href="#">
+								<span>Маникюр</span>
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span>Маникюр и педикюр в 4 руки </span>
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span>Маникюр</span>
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span>Маникюр и педикюр в 4 руки </span>
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span>Маникюр</span>
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span>Маникюр и педикюр в 4 руки </span>
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span>Маникюр</span>
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span>Маникюр и педикюр в 4 руки </span>
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__column">
+					<button data-spoller="743" class="btn-clear btn-clear footer__column-title">
+						<span>Разделы</span>
+						<svg class="footer__column-arrow">
+							<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+						</svg>
+					</button>
+					<ul class="list footer__list">
+						<li>
+							<a href="#">
+								<span>Маникюр</span>
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span>Маникюр и педикюр в 4 руки </span>
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span>Маникюр</span>
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span>Маникюр и педикюр в 4 руки </span>
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span>Маникюр</span>
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span>Маникюр и педикюр в 4 руки </span>
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span>Маникюр</span>
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span>Маникюр и педикюр в 4 руки </span>
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<div class="footer__bottom">
+			<div class="container footer__bottom-container">
+				<p class="footer__copyright">©2023 «На клавишах».</p>
+				<a href="#" class="footer__policy">Политика конфиденциальности.</a>
+				<div class="footer__created">
+					<span>Created by </span>
+					<a href="#" target="_blank">DragoWeb</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="js/app.min.js?_v=20250115185307"></script>
+</body>
+
+</html>

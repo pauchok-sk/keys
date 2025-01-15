@@ -36,6 +36,9 @@
     &._no-margin {
       margin: 0;
     }
+    &._flex {
+      flex: 1
+    }
   }
   &__buttons {
     @include flex-center;

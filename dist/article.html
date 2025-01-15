@@ -1,0 +1,666 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>pauchoo0k</title>
+	<meta charset="UTF-8" />
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap&_v=20250115185307" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap&_v=20250115185307" rel="stylesheet" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20250115185307" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body class="body">
+	<header class="header">
+		<div class="header__container">
+			<a href="/" class="header__logo">
+				<img src="img/logo.svg" alt="logo" class="header__logo-img" />
+			</a>
+			<nav class="header__nav">
+				<div class="header__burger-nav">
+					<button class="btn-clear header__burger-btn" id="burger-btn">
+						<svg class="header__burger-icon">
+							<use xlink:href="img/icons/icons.svg#icon-burger"></use>
+						</svg>
+						<svg class="header__burger-icon">
+							<use xlink:href="img/icons/icons.svg#icon-close"></use>
+						</svg>
+					</button>
+					<a href="#" target="_blank" class="header__inst">
+						<svg class="header__inst-icon">
+							<use xlink:href="img/icons/icons.svg#icon-inst"></use>
+						</svg>
+						<span>na_klavishah</span>
+					</a>
+				</div>
+				<ul class="list header__list">
+					<li>
+						<a href="#">
+							<span class="number">1</span>
+							<span>Услуги</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="number">2</span>
+							<span>Наши работы</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="number">3</div>
+							<span>Цены</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="number">4</div>
+							<span>Акции</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="number">5</div>
+							<span>Контакты</span>
+						</a>
+					</li>
+				</ul>
+				<div class="header__contacts">
+					<a href="tel:+79186760074" class="header__tel">+7 (918) 676‒00‒74</a>
+					<p class="header__contacts-content">Ежедневно:с 09:00 до 21:00</p>
+				</div>
+				<a href="tel:+79186760074" class="header__tel-mobile">
+					<svg class="header__tel-icon">
+						<use xlink:href="img/icons/icons.svg#icon-tel"></use>
+					</svg>
+				</a>
+			</nav>
+			<button class="btn-main header__btn">
+				<span>Записаться</span>
+				<svg class="btn-main__icon">
+					<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+				</svg>
+			</button>
+		</div>
+	</header>
+
+	<div class="burger" id="burger">
+		<div class="burger__column" id="sections">
+			<span class="burger__column-title">Разделы</span>
+			<button class="btn-clear burger__services-btn" id="services-open">
+				<span>Услуги</span>
+				<svg class="burger__services-btn-arrow">
+					<use xlink:href='img/icons/icons.svg#icon-arrow'></use>
+				</svg>
+			</button>
+			<ul class="list burger__list">
+				<li>
+					<a href="#">Наши работы</a>
+				</li>
+				<li>
+					<a href="#">Наши работы</a>
+				</li>
+				<li>
+					<a href="#">Наши работы</a>
+				</li>
+				<li>
+					<a href="#">Наши работы</a>
+				</li>
+				<li>
+					<a href="#">Наши работы</a>
+				</li>
+				<li>
+					<a href="#">Наши работы</a>
+				</li>
+				<li>
+					<a href="#">Наши работы</a>
+				</li>
+			</ul>
+		</div>
+		<div class="burger__column" id="services">
+			<span class="burger__column-title">
+				Услуги
+			</span>
+			<button class="btn-clear burger__prev" id="sections-open">
+				<svg class="burger__prev-icon">
+					<use xlink:href='img/icons/icons.svg#icon-arrow-line'></use>
+				</svg>
+				<span>Назад</span>
+			</button>
+			<ul class="list burger__list">
+				<li>
+					<a href="#">Маникюр</a>
+				</li>
+				<li>
+					<a href="#">Наши работы</a>
+				</li>
+				<li>
+					<a href="#">Наши работы</a>
+				</li>
+				<li>
+					<a href="#">Наши работы</a>
+				</li>
+				<li>
+					<a href="#">Наши работы</a>
+				</li>
+				<li>
+					<a href="#">Наши работы</a>
+				</li>
+				<li>
+					<a href="#">Наши работы</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="stock remove">
+		<div class="stock__head">
+			<h5 class="stock__title">Акция</h5>
+			<button class="btn-remove btn-clear stock__close">
+				<span>Закрыть</span>
+				<svg class="stock__close-icon">
+					<use xlink:href="img/icons/icons.svg#icon-close-circle"></use>
+				</svg>
+			</button>
+		</div>
+		<div class="stock__body">
+			<h3 class="title title-3 stock__main-title">
+				Педикюр с покрытие гель-лак Polacco по специальной цене 2 300₽
+			</h3>
+			<p class="stock__content">
+				Ногтевая студия «На клавишах» предлагаем своим клиентам, новую акцию!
+			</p>
+			<a href="#" class="btn-main stock__btn">
+				<span>Подробнее</span>
+				<svg class="btn-main__icon">
+					<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+				</svg>
+			</a>
+		</div>
+	</div>
+
+	<button class="btn-clear online-record">
+		<div class="online-record__wrapper">
+			<span>Онлайн запись</span>
+		</div>
+	</button>
+	<main>
+		<section class="intro-simple">
+			<div class="container intro-simple__container">
+				<div class="breadcrumbs">
+					<div class="aioseo-breadcrumbs">
+						<span class="aioseo-breadcrumb">
+							<a href="/" title="Главная">Главная</a>
+						</span>
+						<span class="aioseo-breadcrumb">
+							<a href="#">Блог</a>
+						</span>
+						<span class="aioseo-breadcrumb">
+							Свадебный маникюр - особенности и рекомендации
+						</span>
+					</div>
+				</div>
+				<h1 class="title intro-simple__title _min">
+					Свадебный маникюр - особенности и рекомендации
+				</h1>
+				<div class="intro-simple__tags">
+					<span>Маникюр</span>
+					<div></div>
+					<time datetime="26.10.21">26.10.21</time>
+				</div>
+				<img src="img/archive.webp" alt="image" class="intro-simple__img" />
+			</div>
+		</section>
+
+		<section class="article">
+			<div class="container">
+				<div>
+					<h3>
+						Свадебный маникюр совершенно особая деталь, отличная и от повседневного,
+						и даже от праздничного и выходного маникюра.
+					</h3>
+					<p>
+						Чтобы создать невинный, чистый и светлый образ невесты, придется
+						соблюдать определенные каноны. И первый, и самый главный из них это
+						общность деталей. То есть все, начиная со свадебного платья и прически,
+						заканчивая макияжем и дизайном ногтей, все должно гармонично сочетаться
+						между собой и работать на один конечный образ. И экстравагантные,
+						слишком яркие и выбивающиеся детали, только испортят общее впечатление.
+						<br />
+						<br />
+						Поэтому слишком объемные, цветастые детали, яркие конструкции, что
+						излишне акцентируют внимание на руках, для такого маникюра не применимы.
+						Конечно, несколько отдельно в этом случае стоят неклассические торжества
+						и наряды, когда платье не белое, а скажем красное или черное. Но даже в
+						таких случаях описанные рекомендации будут сохраняться, изменится лишь
+						цветовой акцент. Наиболее выигрышным вариантом при классической свадьбе
+						можно назвать простой и элегантный френч и его разновидности.
+						<br />
+						<br />
+						Это может быть и чистая белая классика на «линии улыбки», и что-нибудь
+						более яркое, цветное. Чтобы придать французскому маникюру более
+						праздничный вид, можно дополнить его стразами или аккуратным узором. Тон
+						же самого ногтя стоит выбрать натуральный или светлый цвет. Несмотря на
+						то, что простой и аккуратный дизайн по сути можно сделать дома, мастера
+						салона на «На Клавишах» советуют обратиться к профессионалам. Свадьба,
+						слишком важное событие, чтобы омрачать его даже такой мелочью как
+						маленький скол лака. А потому лучше сделать его в профессиональном
+						салоне.
+					</p>
+					<h4>Классика — френч со стразами</h4>
+					<p>
+						Линию улыбки можно подчеркнуть различными способами, современные
+						средства дают в этом плане большой простор для фантазии. Можно выложить
+						и лаконичную, аккуратную дугу, создать острый угол, провести тонкую,
+						изящную полоску или оригинальные наклонные рисунки — ограничений по сути
+						нет, только ваш вкус и предпочтения. Единственная важная деталь тут в
+						том, что более острые углы и четкие линии смотрятся строже, а плавные
+						изгибы напротив придадут женственности.
+					</p>
+				</div>
+				<div class="article__gallery">
+					<img src="img/article.webp" alt="img" class="article__gallery-img" />
+					<img src="img/article.webp" alt="img" class="article__gallery-img" />
+					<img src="img/article.webp" alt="img" class="article__gallery-img" />
+				</div>
+				<div>
+					<h4>Верный выбор — омбре</h4>
+					<p>
+						Этот свадебный маникюр поможет невесте подчеркнуть нежность элегантность
+						образа. Омбре представляет собой плавный переход цвета и оттенка, он
+						чем-то похож на френч, но в отличие от него имеют более мягкую, плавно
+						перетекающую в другой цвет «линию улыбки». Для создания омбре
+						используются лаки и покрытия одной текстуры, к примеру, белый и
+						телесный, розовый и другие подобные сочетания. Чтобы придать
+						дополнительную изюминку можно добавить страз и легкий, ненавязчивый
+						узор.
+					</p>
+					<h4>Узоры и завитки</h4>
+					<p>
+						Этот свадебный маникюр поможет невесте подчеркнуть нежность элегантность
+						образа. Омбре представляет собой плавный переход цвета и оттенка, он
+						чем-то похож на френч, но в отличие от него имеют более мягкую, плавно
+						перетекающую в другой цвет «линию улыбки». Для создания омбре
+						используются лаки и покрытия одной текстуры, к примеру, белый и
+						телесный, розовый и другие подобные сочетания. Чтобы придать
+						дополнительную изюминку можно добавить страз и легкий, ненавязчивый
+						узор. Узоры и завитки Легкий и изящные узоры, один из популярных трендов
+						в свадебном дизайне. Часто выполняются в комбинации с другими видами
+						свадебного маникюра, когда рисунок размещают на одном или нескольких
+						ногтях (сегодня в моде принцип асимметричности изображений) При
+						соблюдении принципов умеренности такая деталь станет эффектной
+						изюминкой, и лишь подчеркнет общий стиль.
+					</p>
+					<h4>Наиболее распространены узоры следующих типов</h4>
+					<ul>
+						<li>
+							Слайдеры. Это самый простой и быстрый в исполнении вариант. Рисунок в
+							данном случае нанесен на прозрачную или цветную основу, которую мастер
+							приклеивает к ногтю.
+						</li>
+						<li>
+							Стемпинг. Это уже полноценный рисунок, но сделанный из готового уже
+							образца. Вы можете выбрать уже готовый узор из обширного каталога.
+						</li>
+						<li>
+							Художественная роспись кистью. Выполняется квалифицированным мастером,
+							имеющим большой опыт в создании уникальных, неповторимых узоров для
+							свадеб и торжеств. Тут вы сможете воплотить любую фантазию, и создать
+							узор максимально гармонирующий с общим образом. Их можно выполнить в
+							комбинации с тем же омбре.
+						</li>
+					</ul>
+					<h4>Яркий, сочный и сияющий маникюр</h4>
+					<p>
+						Если вы любите яркие краски и цвета, подбирать цвет и тон маникюра нужно
+						под помаду, тени, свадебный букет. Важным нюансом тут будет расписание
+						свадьбы, и общее количество мероприятий. Танцы, фотосессия,
+						поздравления, праздничный стол все это приведет к тому, что даже самая
+						стойкая помада утратит свою яркость, и подправить ее вы сможете не
+						всегда. Поэтому чтобы маникюр потом не смотрелся ярким, но выбивающимся
+						из общего ряда пятном, стоит сделать его немного более мягким по тону,
+						или же оформить цветом не весь ноготь, а лишь его часть. Уважаемые
+						читатели нашего блога! Салон маникюра и педикюра «На Клавишах» является
+						официальным партнером свадебного агентства — «Екатерины Шатовой»,
+						поэтому если у вас в ближайшее время будет стоять выбор, в какое
+						свадебное агентство обратиться, то советуем именно их!
+					</p>
+				</div>
+				<div class="article__nav">
+					<a href="#" class="btn-main">
+						<svg class="btn-main__icon _reverse">
+							<use xlink:href='img/icons/icons.svg#icon-arrow'></use>
+						</svg>
+						<span>Назад</span>
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="rec">
+			<div class="rec__nav">
+				<div class="container">
+					<button class="slider-btn _prev">
+						<svg class="slider-btn__icon">
+							<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+						</svg>
+					</button>
+					<span class="tag">Другие статьи</span>
+					<button class="slider-btn _next">
+						<svg class="slider-btn__icon">
+							<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+						</svg>
+					</button>
+				</div>
+			</div>
+			<div class="swiper rec__slider">
+				<div class="swiper-wrapper">
+					<article class="swiper-slide rec__article">
+						<a href="#" class="rec__article-link"></a>
+						<img src="img/archive.webp" alt="image" class="rec__article-img" />
+						<div class="rec__article-middle">
+							<span class="rec__article-tag">Маникюр</span>
+							<div class="rec__article-point"></div>
+							<time datetime="2024-10-23" class="rec__article-date">23.10.2024</time>
+						</div>
+						<h4 class="title title-4 rec__article-title">
+							Свадебный маникюр - особенности и рекомендации
+						</h4>
+					</article>
+					<article class="swiper-slide rec__article">
+						<a href="#" class="rec__article-link"></a>
+						<img src="img/archive.webp" alt="image" class="rec__article-img" />
+						<div class="rec__article-middle">
+							<span class="rec__article-tag">Маникюр</span>
+							<div class="rec__article-point"></div>
+							<time datetime="2024-10-23" class="rec__article-date">23.10.2024</time>
+						</div>
+						<h4 class="title title-4 rec__article-title">
+							Свадебный маникюр - особенности и рекомендации
+						</h4>
+					</article>
+					<article class="swiper-slide rec__article">
+						<a href="#" class="rec__article-link"></a>
+						<img src="img/archive.webp" alt="image" class="rec__article-img" />
+						<div class="rec__article-middle">
+							<span class="rec__article-tag">Маникюр</span>
+							<div class="rec__article-point"></div>
+							<time datetime="2024-10-23" class="rec__article-date">23.10.2024</time>
+						</div>
+						<h4 class="title title-4 rec__article-title">
+							Свадебный маникюр - особенности и рекомендации
+						</h4>
+					</article>
+					<article class="swiper-slide rec__article">
+						<a href="#" class="rec__article-link"></a>
+						<img src="img/archive.webp" alt="image" class="rec__article-img" />
+						<div class="rec__article-middle">
+							<span class="rec__article-tag">Маникюр</span>
+							<div class="rec__article-point"></div>
+							<time datetime="2024-10-23" class="rec__article-date">23.10.2024</time>
+						</div>
+						<h4 class="title title-4 rec__article-title">
+							Свадебный маникюр - особенности и рекомендации
+						</h4>
+					</article>
+					<article class="swiper-slide rec__article">
+						<a href="#" class="rec__article-link"></a>
+						<img src="img/archive.webp" alt="image" class="rec__article-img" />
+						<div class="rec__article-middle">
+							<span class="rec__article-tag">Маникюр</span>
+							<div class="rec__article-point"></div>
+							<time datetime="2024-10-23" class="rec__article-date">23.10.2024</time>
+						</div>
+						<h4 class="title title-4 rec__article-title">
+							Свадебный маникюр - особенности и рекомендации
+						</h4>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<section class="intro-about">
+			<div class="container">
+				<p class="title title-3 intro-about__content">
+					Если у вас есть всего 1 час приходите в наш салон. Мы выполним любой
+					маникюр и педикюр в 4 руки, а вы успеете отдохнуть и набраться сил!
+				</p>
+			</div>
+		</section>
+	</main>
+	<footer class="footer">
+		<div class="footer__container">
+			<div class="footer__main">
+				<a href="/" class="footer__logo">
+					<img src="img/logo-big.svg" alt="logo" class="footer__logo-img" />
+				</a>
+				<span class="tag footer__tag">Пространство красоты </span>
+			</div>
+			<nav data-spollers="743,max" data-one-spoller class="footer__nav">
+				<div class="footer__column">
+					<span class="btn-clear footer__column-title"> Информация </span>
+					<ul class="list footer__list-contacts">
+						<li>
+							<svg class="footer__contacts-icon">
+								<use xlink:href="img/icons/icons.svg#icon-tel-flip"></use>
+							</svg>
+							<a href="tel:+79186760074">+7 (918) 676-00-74</a>
+						</li>
+						<li>
+							<svg class="footer__contacts-icon">
+								<use xlink:href="img/icons/icons.svg#icon-message"></use>
+							</svg>
+							<a href="mailto:info@na-klavishah.ru">info@na-klavishah.ru</a>
+						</li>
+						<li>
+							<svg class="footer__contacts-icon">
+								<use xlink:href="img/icons/icons.svg#icon-location"></use>
+							</svg>
+							<span>Адреса наших салонов</span>
+						</li>
+						<li>
+							<svg class="footer__contacts-icon">
+								<use xlink:href="img/icons/icons.svg#icon-clock"></use>
+							</svg>
+							<span>Ежедневно: с 09:00 до 21:00</span>
+						</li>
+						<li>
+							<svg class="footer__contacts-icon">
+								<use xlink:href="img/icons/icons.svg#icon-users"></use>
+							</svg>
+							<a href="#">
+								<span>Вакансии</span>
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+					<ul class="list footer__social">
+						<li>
+							<a href="#" target="_blank" class="footer__social-btn">
+								<img src="img/inst.svg" alt="icon" class="footer__social-icon" />
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank" class="footer__social-btn">
+								<img src="img/vk.svg" alt="icon" class="footer__social-icon" />
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank" class="footer__social-btn">
+								<img src="img/wh.svg" alt="icon" class="footer__social-icon" />
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__column">
+					<button data-spoller class="btn-clear btn-clear footer__column-title">
+						<span>Услуги</span>
+						<svg class="footer__column-arrow">
+							<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+						</svg>
+					</button>
+					<ul class="list footer__list">
+						<li>
+							<a href="#">
+								<span>Маникюр</span>
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span>Маникюр и педикюр в 4 руки </span>
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span>Маникюр</span>
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span>Маникюр и педикюр в 4 руки </span>
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span>Маникюр</span>
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span>Маникюр и педикюр в 4 руки </span>
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span>Маникюр</span>
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span>Маникюр и педикюр в 4 руки </span>
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__column">
+					<button data-spoller="743" class="btn-clear btn-clear footer__column-title">
+						<span>Разделы</span>
+						<svg class="footer__column-arrow">
+							<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+						</svg>
+					</button>
+					<ul class="list footer__list">
+						<li>
+							<a href="#">
+								<span>Маникюр</span>
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span>Маникюр и педикюр в 4 руки </span>
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span>Маникюр</span>
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span>Маникюр и педикюр в 4 руки </span>
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span>Маникюр</span>
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span>Маникюр и педикюр в 4 руки </span>
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span>Маникюр</span>
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span>Маникюр и педикюр в 4 руки </span>
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<div class="footer__bottom">
+			<div class="container footer__bottom-container">
+				<p class="footer__copyright">©2023 «На клавишах».</p>
+				<a href="#" class="footer__policy">Политика конфиденциальности.</a>
+				<div class="footer__created">
+					<span>Created by </span>
+					<a href="#" target="_blank">DragoWeb</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=b46e9249-4925-4460-b11c-3aaf76ad0115&lang=ru_RU&_v=20250115185307" type="text/javascript"></script>
+	<script src="js/app.min.js?_v=20250115185307"></script>
+</body>
+
+</html>
