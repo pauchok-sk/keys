@@ -1,0 +1,114 @@
+<section class="reviews-add">
+  <div class="container">
+    <div class="reviews-add__head">
+      <span class="tag">Оставить отзыв</span>
+      <h2 class="title title-2 reviews-add__title">
+        Поделитесь своими впечатлениями с другими
+      </h2>
+    </div>
+    <div class="form">
+      <div class="form__head">
+        <div class="form__block">
+          <span class="form__block-title">Ваше фото</span>
+          <div class="form__img-wrapper" id="avatar-wrapper">
+            <input
+              type="file"
+              name="Аватарка"
+              id="input-avatar"
+              accept="image/png, image/jpeg"
+              class="form__img-input"
+            />
+            <img />
+          </div>
+        </div>
+        <div class="form__block">
+          <span class="form__block-title">Ваша оценка</span>
+          <div class="rating" data-rating="0">
+            <label for="rating-1" class="rating__label">
+              <svg class="rating__heart">
+                <use xlink:href="img/icons/icons.svg#icon-heart"></use>
+              </svg>
+            </label>
+            <label for="rating-2" class="rating__label">
+              <svg class="rating__heart">
+                <use xlink:href="img/icons/icons.svg#icon-heart"></use>
+              </svg>
+            </label>
+            <label for="rating-3" class="rating__label">
+              <svg class="rating__heart">
+                <use xlink:href="img/icons/icons.svg#icon-heart"></use>
+              </svg>
+            </label>
+            <label for="rating-4" class="rating__label">
+              <svg class="rating__heart">
+                <use xlink:href="img/icons/icons.svg#icon-heart"></use>
+              </svg>
+            </label>
+            <label for="rating-5" class="rating__label">
+              <svg class="rating__heart">
+                <use xlink:href="img/icons/icons.svg#icon-heart"></use>
+              </svg>
+            </label>
+
+            <input
+              type="radio"
+              name="rating"
+              value="1"
+              id="rating-1"
+              class="rating__input"
+            />
+            <input
+              type="radio"
+              name="rating"
+              value="2"
+              id="rating-2"
+              class="rating__input"
+            />
+            <input
+              type="radio"
+              name="rating"
+              value="3"
+              id="rating-3"
+              class="rating__input"
+            />
+            <input
+              type="radio"
+              name="rating"
+              value="4"
+              id="rating-4"
+              class="rating__input"
+            />
+            <input
+              type="radio"
+              name="rating"
+              value="5"
+              id="rating-5"
+              class="rating__input"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="form__wrapper">
+        <div class="form__item">
+          <input type="text" placeholder="Ваше имя" class="input" />
+        </div>
+        <div class="form__item">
+          <input type="tel" placeholder="Номер телефона" class="input" />
+        </div>
+        <div class="form__item">
+          <input type="text" placeholder="Текст сообщения" class="input" />
+        </div>
+      </div>
+      <p class="form__policy">
+        Нажимая на кнопку «Отправить» я даю согласие на
+        <a href="#">обработку персональных данных</a>
+      </p>
+      <button class="btn-main">
+        <span>Отправить</span>
+        <svg class="btn-main__icon">
+          <use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>

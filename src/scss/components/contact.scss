@@ -28,48 +28,4 @@
       line-height: 18px;
     }
   }
-  &__form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 1120px;
-    width: 100%;
-    margin: 0 auto;
-  }
-  &__form-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    gap: 40px;
-    row-gap: 65px;
-    margin-bottom: 32px;
-    @include tablet {
-      gap: 80px;
-    }
-  }
-  &__form-item {
-    flex: 0 1 calc(50% - 20px);
-    &:last-child {
-      flex-basis: 100%;
-    }
-    @include tablet {
-      flex-basis: 100%;
-    }
-  }
-  &__form-policy {
-    font-size: 14px;
-    line-height: 18px;
-    text-align: center;
-    margin: 0px 0px 60px 0px;
-    @include laptop-min {
-      margin-bottom: 40px;
-    }
-
-    a {
-      color: var(--vector);
-      @include hover {
-        text-decoration: underline;
-      }
-    }
-  }
 }

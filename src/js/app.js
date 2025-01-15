@@ -10,6 +10,8 @@ import fancy from "./files/fancy.js";
 import removes from "./files/removes.js";
 import more from "./files/more.js";
 import map from "./files/map.js";
+import rating from "./files/rating.js";
+import advatarLoad from "./files/avatarLoad.js";
 
 functions.mediaAdaptive();
 spoller();
@@ -21,3 +23,5 @@ fancy();
 removes();
 more();
 map();
+rating();
+advatarLoad();
