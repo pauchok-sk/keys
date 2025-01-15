@@ -8,6 +8,10 @@
   z-index: 100;
   opacity: 0;
   visibility: hidden;
+  &._open {
+    opacity: 1;
+    visibility: visible;
+  }
   &__head {
     display: flex;
     background-color: var(--main);

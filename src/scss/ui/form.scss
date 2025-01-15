@@ -104,6 +104,8 @@
     border: 1px solid black;
     margin-top: 5px;
     z-index: 10;
+    max-height: 200px;
+    overflow-y: auto;
 
     transform: translateY(30px);
     opacity: 0;
@@ -111,6 +113,10 @@
 
     transition: opacity .4s ease, visibility .4s ease, transform .4s ease;
 
+    &::-webkit-scrollbar {
+      width: 0;
+      height: 0;
+    }
     li {
       font-size: 16px;
       line-height: 22px;

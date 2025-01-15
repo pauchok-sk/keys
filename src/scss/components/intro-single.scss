@@ -125,5 +125,24 @@
     @include mobile {
       max-height: 260px;
     }
+
+    &._big {
+      height: 800px;
+      @include laptop {
+        height: 500px;
+      }
+      @include laptop-min {
+        width: 100%;
+        object-fit: cover;
+        max-height: 600px;
+        height: auto;
+      }
+      @include tablet {
+        max-height: 400px;
+      }
+      @include mobile {
+        max-height: 260px;
+      }
+    }
   }
 }

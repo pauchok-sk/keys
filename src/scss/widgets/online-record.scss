@@ -20,6 +20,10 @@
   @include hover {
     opacity: 0.5;
   }
+  &._open {
+    visibility: visible;
+    opacity: 1;
+  }
   @include tablet {
     width: 76px;
     height: 76px;

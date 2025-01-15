@@ -14,6 +14,7 @@ import rating from "./files/rating.js";
 import advatarLoad from "./files/avatarLoad.js";
 import anchors from "./files/anchors.js";
 import formSelect from "./files/formSelect.js";
+import modal from "./files/modal.js";
 
 functions.mediaAdaptive();
 spoller();
@@ -29,3 +30,4 @@ rating();
 advatarLoad();
 anchors();
 formSelect();
+modal();

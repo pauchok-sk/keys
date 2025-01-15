@@ -8,9 +8,9 @@
 	<link rel="shortcut icon" href="favicon.ico" />
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap&_v=20250115192523" rel="stylesheet" />
-	<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap&_v=20250115192523" rel="stylesheet" />
-	<link rel="stylesheet" href="css/style.min.css?_v=20250115192523" />
+	<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap&_v=20250116013024" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap&_v=20250116013024" rel="stylesheet" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20250116013024" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
@@ -79,7 +79,7 @@
 					</svg>
 				</a>
 			</nav>
-			<button class="btn-main header__btn">
+			<button data-modal-btn="order-call" class="btn-main header__btn">
 				<span>Записаться</span>
 				<svg class="btn-main__icon">
 					<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
@@ -188,6 +188,170 @@
 			<span>Онлайн запись</span>
 		</div>
 	</button>
+	<div data-modal="order-call" class="modal">
+		<div class="modal__overlay">
+			<div class="modal__window">
+				<div class="modal__head">
+					<h5 class="modal__head-title">Связаться</h5>
+					<button class="btn-clear modal__close">
+						<span>Закрыть</span>
+						<svg class="modal__close-icon">
+							<use xlink:href="img/icons/icons.svg#icon-close-circle"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="modal__body">
+					<h3 class="title title-3 modal__title">Закажите обратный звонок</h3>
+					<p class="modal__content">
+						Оставьте свой номер телефона, и мы перезвоним вам в ближайшее время.
+					</p>
+					<form action="#" class="form modal__form">
+						<div class="form__wrapper">
+							<div class="form__item">
+								<input type="text" placeholder="Ваше имя" class="input" />
+							</div>
+							<div class="form__item">
+								<input type="tel" placeholder="Номер телефона" class="input" />
+							</div>
+						</div>
+						<p class="form__policy">
+							Нажимая на кнопку «Отправить» я даю согласие на
+							<a href="#">обработку персональных данных</a>
+						</p>
+						<button class="btn-main modal__form-btn">
+							<span>Отправить</span>
+							<svg class="btn-main__icon">
+								<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+							</svg>
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div data-modal="paper-certificate" class="modal">
+		<div class="modal__overlay">
+			<div class="modal__window">
+				<div class="modal__head">
+					<h5 class="modal__head-title">Заявка</h5>
+					<button class="btn-clear modal__close">
+						<span>Закрыть</span>
+						<svg class="modal__close-icon">
+							<use xlink:href="img/icons/icons.svg#icon-close-circle"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="modal__body">
+					<h3 class="title title-3 modal__title">
+						Оформите бумажный сертификат прямо сейчас!
+					</h3>
+					<p class="modal__content">
+						Укажите свои контактные данные в форме, и наш специалист свяжется с
+						вами, чтобы помочь с оформлением.
+					</p>
+					<form action="#" class="form modal__form">
+						<div class="form__wrapper">
+							<div class="form__item">
+								<input type="text" placeholder="Ваше имя" class="input" />
+							</div>
+							<div class="form__item">
+								<input type="tel" placeholder="Номер телефона" class="input" />
+							</div>
+							<div class="form__item">
+								<input type="text" placeholder="Номинал сертификата" class="input" />
+								<button class="form__select-btn">
+									<svg class="form__select-arrow">
+										<use xlink:href="img/icons/icons.svg#icon-arrow-strong"></use>
+									</svg>
+								</button>
+								<ul class="list form__select-list">
+									<li>Педикюрщик</li>
+									<li>Маникюрщик</li>
+									<li>Педикюрщик</li>
+									<li>Маникюрщик</li>
+									<li>Педикюрщик</li>
+									<li>Маникюрщик</li>
+								</ul>
+							</div>
+						</div>
+						<p class="form__policy">
+							Нажимая на кнопку «Отправить» я даю согласие на
+							<a href="#">обработку персональных данных</a>
+						</p>
+						<button class="btn-main modal__form-btn">
+							<span>Отправить</span>
+							<svg class="btn-main__icon">
+								<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+							</svg>
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div data-modal="electric-certificate" class="modal">
+		<div class="modal__overlay">
+			<div class="modal__window">
+				<div class="modal__head">
+					<h5 class="modal__head-title">Заявка</h5>
+					<button class="btn-clear modal__close">
+						<span>Закрыть</span>
+						<svg class="modal__close-icon">
+							<use xlink:href="img/icons/icons.svg#icon-close-circle"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="modal__body">
+					<h3 class="title title-3 modal__title">
+						Оформите электронный сертификат прямо сейчас!
+					</h3>
+					<p class="modal__content">
+						Укажите свои контактные данные в форме, и наш специалист свяжется с
+						вами, чтобы помочь с оформлением.
+					</p>
+					<form action="#" class="form modal__form">
+						<div class="form__wrapper">
+							<div class="form__item">
+								<input type="text" placeholder="Ваше имя" class="input" />
+							</div>
+							<div class="form__item">
+								<input type="tel" placeholder="Номер телефона" class="input" />
+							</div>
+							<div class="form__item">
+								<input type="text" placeholder="Номинал сертификата" class="input" />
+								<button class="form__select-btn">
+									<svg class="form__select-arrow">
+										<use xlink:href="img/icons/icons.svg#icon-arrow-strong"></use>
+									</svg>
+								</button>
+								<ul class="list form__select-list">
+									<li>Педикюрщик</li>
+									<li>Маникюрщик</li>
+									<li>Педикюрщик</li>
+									<li>Маникюрщик</li>
+									<li>Педикюрщик</li>
+									<li>Маникюрщик</li>
+								</ul>
+							</div>
+						</div>
+						<p class="form__policy">
+							Нажимая на кнопку «Отправить» я даю согласие на
+							<a href="#">обработку персональных данных</a>
+						</p>
+						<button class="btn-main modal__form-btn">
+							<span>Отправить</span>
+							<svg class="btn-main__icon">
+								<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+							</svg>
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<main>
 
 		<section class="intro">
@@ -196,7 +360,7 @@
 				<h1 class="title intro__title">
 					«На клавишах» - ведущая сеть Юга России в сфере nail - индустрии
 				</h1>
-				<button class="btn-main intro__btn _primary">
+				<button data-modal-btn="order-call" class="btn-main intro__btn _primary">
 					<span>Записаться</span>
 					<svg class="btn-main__icon">
 						<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
@@ -248,12 +412,12 @@
 								<img src="img/services.jpg" alt="image" class="services__slide-img" />
 								<span class="services__slide-number">38 видов</span>
 								<h5 class="title title-4 services__slide-title">Маникюр</h5>
-								<a href="#" class="btn-main">
+								<button data-modal-btn="order-call" class="btn-main">
 									<span>Записаться</span>
 									<svg class="btn-main__icon">
 										<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
 									</svg>
-								</a>
+								</button>
 							</article>
 							<article class="swiper-slide">
 								<img src="img/services.jpg" alt="image" class="services__slide-img" />
@@ -261,23 +425,23 @@
 								<h5 class="title title-4 services__slide-title">
 									Маникюр и педикюр в 4 руки
 								</h5>
-								<a href="#" class="btn-main">
+								<button data-modal-btn="order-call" class="btn-main">
 									<span>Записаться</span>
 									<svg class="btn-main__icon">
 										<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
 									</svg>
-								</a>
+								</button>
 							</article>
 							<article class="swiper-slide">
 								<img src="img/services.jpg" alt="image" class="services__slide-img" />
 								<span class="services__slide-number">38 видов</span>
 								<h5 class="title title-4 services__slide-title">Маникюр</h5>
-								<a href="#" class="btn-main">
+								<button data-modal-btn="order-call" class="btn-main">
 									<span>Записаться</span>
 									<svg class="btn-main__icon">
 										<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
 									</svg>
-								</a>
+								</button>
 							</article>
 							<article class="swiper-slide">
 								<img src="img/services.jpg" alt="image" class="services__slide-img" />
@@ -285,23 +449,23 @@
 								<h5 class="title title-4 services__slide-title">
 									Маникюр и педикюр в 4 руки
 								</h5>
-								<a href="#" class="btn-main">
+								<button data-modal-btn="order-call" class="btn-main">
 									<span>Записаться</span>
 									<svg class="btn-main__icon">
 										<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
 									</svg>
-								</a>
+								</button>
 							</article>
 							<article class="swiper-slide">
 								<img src="img/services.jpg" alt="image" class="services__slide-img" />
 								<span class="services__slide-number">38 видов</span>
 								<h5 class="title title-4 services__slide-title">Маникюр</h5>
-								<a href="#" class="btn-main">
+								<button data-modal-btn="order-call" class="btn-main">
 									<span>Записаться</span>
 									<svg class="btn-main__icon">
 										<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
 									</svg>
-								</a>
+								</button>
 							</article>
 							<article class="swiper-slide">
 								<img src="img/services.jpg" alt="image" class="services__slide-img" />
@@ -309,12 +473,12 @@
 								<h5 class="title title-4 services__slide-title">
 									Маникюр и педикюр в 4 руки
 								</h5>
-								<a href="#" class="btn-main">
+								<button data-modal-btn="order-call" class="btn-main">
 									<span>Записаться</span>
 									<svg class="btn-main__icon">
 										<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
 									</svg>
-								</a>
+								</button>
 							</article>
 						</div>
 					</div>
@@ -326,12 +490,12 @@
 								<img src="img/services.jpg" alt="image" class="services__slide-img" />
 								<span class="services__slide-number">38 видов222</span>
 								<h5 class="title title-4 services__slide-title">Маникюр</h5>
-								<a href="#" class="btn-main">
+								<button data-modal-btn="order-call" class="btn-main">
 									<span>Записаться</span>
 									<svg class="btn-main__icon">
 										<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
 									</svg>
-								</a>
+								</button>
 							</article>
 							<article class="swiper-slide">
 								<img src="img/services.jpg" alt="image" class="services__slide-img" />
@@ -339,23 +503,23 @@
 								<h5 class="title title-4 services__slide-title">
 									Маникюр и педикюр в 4 руки
 								</h5>
-								<a href="#" class="btn-main">
+								<button data-modal-btn="order-call" class="btn-main">
 									<span>Записаться</span>
 									<svg class="btn-main__icon">
 										<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
 									</svg>
-								</a>
+								</button>
 							</article>
 							<article class="swiper-slide">
 								<img src="img/services.jpg" alt="image" class="services__slide-img" />
 								<span class="services__slide-number">38 видов</span>
 								<h5 class="title title-4 services__slide-title">Маникюр</h5>
-								<a href="#" class="btn-main">
+								<button data-modal-btn="order-call" class="btn-main">
 									<span>Записаться</span>
 									<svg class="btn-main__icon">
 										<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
 									</svg>
-								</a>
+								</button>
 							</article>
 							<article class="swiper-slide">
 								<img src="img/services.jpg" alt="image" class="services__slide-img" />
@@ -363,23 +527,23 @@
 								<h5 class="title title-4 services__slide-title">
 									Маникюр и педикюр в 4 руки
 								</h5>
-								<a href="#" class="btn-main">
+								<button data-modal-btn="order-call" class="btn-main">
 									<span>Записаться</span>
 									<svg class="btn-main__icon">
 										<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
 									</svg>
-								</a>
+								</button>
 							</article>
 							<article class="swiper-slide">
 								<img src="img/services.jpg" alt="image" class="services__slide-img" />
 								<span class="services__slide-number">38 видов</span>
 								<h5 class="title title-4 services__slide-title">Маникюр</h5>
-								<a href="#" class="btn-main">
+								<button data-modal-btn="order-call" class="btn-main">
 									<span>Записаться</span>
 									<svg class="btn-main__icon">
 										<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
 									</svg>
-								</a>
+								</button>
 							</article>
 							<article class="swiper-slide">
 								<img src="img/services.jpg" alt="image" class="services__slide-img" />
@@ -387,12 +551,12 @@
 								<h5 class="title title-4 services__slide-title">
 									Маникюр и педикюр в 4 руки
 								</h5>
-								<a href="#" class="btn-main">
+								<button data-modal-btn="order-call" class="btn-main">
 									<span>Записаться</span>
 									<svg class="btn-main__icon">
 										<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
 									</svg>
-								</a>
+								</button>
 							</article>
 						</div>
 					</div>
@@ -404,12 +568,12 @@
 								<img src="img/services.jpg" alt="image" class="services__slide-img" />
 								<span class="services__slide-number">38 видов3333333</span>
 								<h5 class="title title-4 services__slide-title">Маникюр</h5>
-								<a href="#" class="btn-main">
+								<button data-modal-btn="order-call" class="btn-main">
 									<span>Записаться</span>
 									<svg class="btn-main__icon">
 										<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
 									</svg>
-								</a>
+								</button>
 							</article>
 							<article class="swiper-slide">
 								<img src="img/services.jpg" alt="image" class="services__slide-img" />
@@ -417,23 +581,23 @@
 								<h5 class="title title-4 services__slide-title">
 									Маникюр и педикюр в 4 руки
 								</h5>
-								<a href="#" class="btn-main">
+								<button data-modal-btn="order-call" class="btn-main">
 									<span>Записаться</span>
 									<svg class="btn-main__icon">
 										<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
 									</svg>
-								</a>
+								</button>
 							</article>
 							<article class="swiper-slide">
 								<img src="img/services.jpg" alt="image" class="services__slide-img" />
 								<span class="services__slide-number">38 видов</span>
 								<h5 class="title title-4 services__slide-title">Маникюр</h5>
-								<a href="#" class="btn-main">
+								<button data-modal-btn="order-call" class="btn-main">
 									<span>Записаться</span>
 									<svg class="btn-main__icon">
 										<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
 									</svg>
-								</a>
+								</button>
 							</article>
 							<article class="swiper-slide">
 								<img src="img/services.jpg" alt="image" class="services__slide-img" />
@@ -441,23 +605,23 @@
 								<h5 class="title title-4 services__slide-title">
 									Маникюр и педикюр в 4 руки
 								</h5>
-								<a href="#" class="btn-main">
+								<button data-modal-btn="order-call" class="btn-main">
 									<span>Записаться</span>
 									<svg class="btn-main__icon">
 										<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
 									</svg>
-								</a>
+								</button>
 							</article>
 							<article class="swiper-slide">
 								<img src="img/services.jpg" alt="image" class="services__slide-img" />
 								<span class="services__slide-number">38 видов</span>
 								<h5 class="title title-4 services__slide-title">Маникюр</h5>
-								<a href="#" class="btn-main">
+								<button data-modal-btn="order-call" class="btn-main">
 									<span>Записаться</span>
 									<svg class="btn-main__icon">
 										<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
 									</svg>
-								</a>
+								</button>
 							</article>
 							<article class="swiper-slide">
 								<img src="img/services.jpg" alt="image" class="services__slide-img" />
@@ -465,12 +629,12 @@
 								<h5 class="title title-4 services__slide-title">
 									Маникюр и педикюр в 4 руки
 								</h5>
-								<a href="#" class="btn-main">
+								<button data-modal-btn="order-call" class="btn-main">
 									<span>Записаться</span>
 									<svg class="btn-main__icon">
 										<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
 									</svg>
-								</a>
+								</button>
 							</article>
 						</div>
 					</div>
@@ -909,7 +1073,7 @@
 							отправим ваше теплое послание и электронный подарочный сертификат в
 							нужное время, где бы вы не находились.
 						</p>
-						<button class="btn-main simple__tab-btn">
+						<button data-modal-btn="electric-certificate" class="btn-main simple__tab-btn">
 							<span>Оставить заявку</span>
 							<svg class="btn-main__icon">
 								<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
@@ -923,7 +1087,7 @@
 							нежных молочных коктейлей. А для ценителей сладкого – наши фирменные
 							сырники! Все напитки – комплемент от нашего салона.
 						</p>
-						<button class="btn-main simple__tab-btn">
+						<button data-modal-btn="paper-certificate" class="btn-main simple__tab-btn">
 							<span>Оставить заявку</span>
 							<svg class="btn-main__icon">
 								<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
@@ -1164,7 +1328,7 @@
 		</div>
 	</footer>
 
-	<script src="js/app.min.js?_v=20250115192523"></script>
+	<script src="js/app.min.js?_v=20250116013024"></script>
 </body>
 
 </html>

@@ -4,7 +4,7 @@
   <body class="body">
     @@include('html/components/header.html')
     @@include('html/widgets/burger.html') @@include('html/widgets/stock.html')
-    @@include('html/widgets/online-record.html')
+    @@include('html/widgets/online-record.html') @@include('html/widgets/modals.html')
     <main>
 
       @@include('html/components/intro-jobs.html')
@@ -61,7 +61,7 @@
               <p class="simple__tab-content">
                 Зарплата выплачивается 3 раза в месяц, На банк который вы укажите, или же наличными, как вам будет удобно
               </p>
-              <button class="btn-main simple__tab-btn">
+              <button data-modal-btn="electric-certificate" class="btn-main simple__tab-btn">
                 <span>Оставить заявку</span>
                 <svg class="btn-main__icon">
                   <use xlink:href="img/icons/icons.svg#icon-arrow"></use>
@@ -75,7 +75,7 @@
                 нежных молочных коктейлей. А для ценителей сладкого – наши фирменные
                 сырники! Все напитки – комплемент от нашего салона.
               </p>
-              <button class="btn-main simple__tab-btn">
+              <button data-modal-btn="paper-certificate" class="btn-main simple__tab-btn">
                 <span>Оставить заявку</span>
                 <svg class="btn-main__icon">
                   <use xlink:href="img/icons/icons.svg#icon-arrow"></use>
