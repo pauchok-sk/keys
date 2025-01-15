@@ -265,7 +265,8 @@ section:not(:last-child) {
   border: 1px solid #000;
   font-family: Mulish,sans-serif;
   font-size: 14px;
-  font-weight: 300
+  font-weight: 300;
+  flex-shrink: 0
 }
 [data-tab] {
   display: none
@@ -965,15 +966,28 @@ section:not(:last-child) {
   width: 160px
 }
 .services {
-  overflow: hidden
+  position: relative;
+  overflow: hidden;
+  border-bottom: none!important
+}
+.services::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  background-color: #000
 }
 .services__nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  overflow-x: auto;
+  white-space: nowrap;
+  width: 100%;
   gap: 60px;
-  padding: 80px 0 50px 0;
-  border-bottom: 1px solid #000
+  padding: 80px 0 50px 0
 }
 .services__tab-btn {
   display: flex;
@@ -981,7 +995,7 @@ section:not(:last-child) {
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  flex: 1;
+  flex: 1 0 1;
   gap: 20px;
   padding: 0 16px;
   opacity: .4;
@@ -1008,9 +1022,6 @@ section:not(:last-child) {
   margin: 0;
   color: var(--shaft)
 }
-.services__slider {
-  border-bottom: 1px solid #000
-}
 .services__slider .swiper-wrapper {
   align-items: stretch
 }
@@ -1027,8 +1038,7 @@ section:not(:last-child) {
 }
 .services__wrapper {
   display: grid;
-  grid-template-columns: repeat(12,1fr);
-  border-bottom: 1px solid #000
+  grid-template-columns: repeat(12,1fr)
 }
 .services__article {
   grid-column: 3 span;
@@ -1597,7 +1607,8 @@ section:not(:last-child) {
 .intro-simple__container {
   display: flex;
   flex-direction: column;
-  align-items: center
+  align-items: center;
+  text-align: center
 }
 .intro-simple__title {
   font-size: 86px;
@@ -1632,7 +1643,7 @@ section:not(:last-child) {
 }
 .intro-simple__tags div {
   width: 9px;
-  height: 8px;
+  height: 9px;
   border-radius: 50%;
   background-color: currentColor
 }
@@ -5785,6 +5796,11 @@ html.with-fancybox body.hide-scrollbar {
   }
   .intro-single__img {
     max-height: 260px
+  }
+  .price__article-img {
+    height: 200px;
+    -o-object-fit: cover;
+    object-fit: cover
   }
   .our-works__container {
     max-width: 376px
