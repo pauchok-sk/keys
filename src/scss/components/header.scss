@@ -93,39 +93,59 @@
       display: none;
     }
   }
-  &__inst {
-    align-items: center;
-    gap: 10px;
-    font-size: 16px;
-    line-height: 22px;
+  &__burger-menu {
+    @include flex-between;
+    max-width: 100%;
     opacity: 0;
     visibility: hidden;
-
-    transition:
-      opacity 0.2s ease,
-      visibility 0.2s ease,
-      transform 0.2s ease;
-    @include hover {
-      opacity: 0.5;
-    }
+    max-width: 0px;
+    width: 100%;
+    overflow: hidden;
+    flex: 1;
 
     &._active {
       opacity: 1;
       visibility: visible;
       max-width: 100%;
+
+      transition:
+        opacity 0.2s ease,
+        visibility 0.2s ease,
+        transform 0.2s ease;
+    }
+  }
+  &__inst {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    line-height: 22px;
+
+    transition: opacity 0.2s ease;
+    @include hover {
+      opacity: 0.5;
     }
   }
   &__inst-icon {
     width: 24px;
     height: 24px;
   }
+  &__btn-call {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.96px;
+    text-transform: uppercase;
+    transition: opacity .2s ease;
+    @include hover {
+      opacity: 0.5;
+    }
+  }
   &__list {
     display: flex;
     gap: 50px;
 
-    transition:
-      opacity 0.2s ease;
-    @include desktop {
+    transition: opacity 0.2s ease;
+    @include desktop-big {
       gap: 20px;
     }
     @include laptop-min {

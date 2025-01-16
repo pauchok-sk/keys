@@ -56,8 +56,7 @@
     }
   }
   &__head {
-    display: flex;
-    align-items: center;
+    @include flex-between;
     gap: 30px;
     margin-bottom: 30px;
     @include laptop-middle {

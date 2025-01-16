@@ -1,6 +1,4 @@
 .sect-img {
-  // border-top: 1px solid black;
-  // border-bottom: 1px solid black;
   &__container {
     display: flex;
     &._stretch {
@@ -11,6 +9,9 @@
     width: 50%;
     height: 960px;
     object-fit: cover;
+    @include desktop {
+      height: 750px;
+    }
     @include laptop-min {
       width: 500px;
       height: 500px;
@@ -67,12 +68,19 @@
     &._flex-end {
       justify-content: flex-end;
     }
+
+    &.way__info, &.requisites__info {
+      padding-top: 100px;
+      @include tablet {
+        padding-top: 80px;
+      }
+    }
   }
   &__title {
     max-width: 680px;
     margin: 0px 0px 30px 0px;
     @include laptop-min {
-      margin-bottom: 0;
+      margin-bottom: 20px;
     }
 
     &._no-margin {
@@ -99,12 +107,12 @@
     width: 100%;
     gap: 40px;
     margin: 160px 0px 60px 0px;
-    @include laptop-min {
+    @include desktop {
       margin-top: 40px;
     }
     @include tablet {
       gap: 8px;
-      margin-bottom: 30px;
+      margin: 0px 0px 30px 0px;
     }
   }
   &__btn {
@@ -261,7 +269,7 @@
   &__spoller-icon {
     width: 20px;
     height: 20px;
-    transition: transform .2s ease;
+    transition: transform 0.2s ease;
   }
   &__list-spoller {
     padding: 8px 0px 56px 0px;

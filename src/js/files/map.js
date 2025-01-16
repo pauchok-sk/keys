@@ -16,7 +16,7 @@ export default function map() {
         {},
         {
           iconLayout: "default#image",
-          iconImageHref: "../img/map.svg",
+          iconImageHref: "./img/map.svg",
           iconImageSize: [66, 66],
           iconImageOffset: [-35, -45],
         }

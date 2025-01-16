@@ -4,42 +4,47 @@
   <body class="body">
     @@include('html/components/header.html')
     @@include('html/widgets/burger.html') @@include('html/widgets/stock.html')
-    @@include('html/widgets/online-record.html') @@include('html/widgets/modals.html')
+    @@include('html/widgets/online-record.html')
+    @@include('html/widgets/modals.html')
     <main>
-
       @@include('html/components/intro-jobs.html')
       <section class="intro-about">
         <div class="container">
           <p class="title title-3 intro-about__content">
-            Приглашаем вас присоединиться к дружной команде «На клавишах»! Мы – это сеть из 7 современных студий маникюра и педикюра в Краснодаре с 8-летней историей. Многие из наших сотрудников с нами со дня открытия первой студии, что говорит о нашей стабильности и отличной рабочей атмосфере.
+            Приглашаем вас присоединиться к дружной команде «На клавишах»! Мы –
+            это сеть из 7 современных студий маникюра и педикюра в Краснодаре с
+            8-летней историей. Многие из наших сотрудников с нами со дня
+            открытия первой студии, что говорит о нашей стабильности и отличной
+            рабочей атмосфере.
           </p>
         </div>
       </section>
       <section class="simple">
         <div class="container simple__container tab-container">
-          <div data-da=".gifts__main,1024,2" class="simple__gallery">
+          <div data-da=".jobs-adv__main,1024,2" class="simple__gallery">
             <img data-tab-img alt="image" class="simple__img" />
           </div>
-          <div class="simple__main gifts__main">
+          <div class="simple__main jobs-adv__main">
             <span class="tag">Преимущества</span>
             <h2 class="title title-3 simple__title">
-              Мы заботимся о каждом нашем  сотруднике и обеспечиваем их всем необходимым
+              Мы заботимся о каждом нашем сотруднике и обеспечиваем их всем
+              необходимым
             </h2>
             <div class="simple__buttons">
               <button
                 data-tab-btn="at-1"
-                data-img="@img/gift.jpg"
+                data-img="@img/jobs-adv.jpg"
                 class="btn-clear simple__btn _active"
               >
                 <span class="number">1</span>
                 <div class="simple__btn-gallery">
                   <img
-                    src="@img/atmosphere-btn.jpg"
+                    src="@img/jobs-avatar.jpg"
                     alt="icon"
                     class="simple__btn-icon"
                   />
                 </div>
-                <span>Электронный сертификат</span>
+                <span>Стабильная ЗП</span>
               </button>
               <button
                 data-tab-btn="at-2"
@@ -49,45 +54,52 @@
                 <span class="number">2</span>
                 <div class="simple__btn-gallery">
                   <img
-                    src="@img/atmosphere-btn.jpg"
+                    src="@img/jobs-avatar.jpg"
                     alt="icon"
                     class="simple__btn-icon"
                   />
                 </div>
-                <span>БУМАЖНЫЙ сертификат</span>
+                <span>Премия</span>
+              </button>
+              <button
+                data-tab-btn="at-3"
+                data-img="@img/purity.jpg"
+                class="btn-clear simple__btn"
+              >
+                <span class="number">3</span>
+                <div class="simple__btn-gallery">
+                  <img
+                    src="@img/jobs-avatar.jpg"
+                    alt="icon"
+                    class="simple__btn-icon"
+                  />
+                </div>
+                <span>Выплатами %</span>
               </button>
             </div>
             <div data-tab="at-1" class="_open">
               <p class="simple__tab-content">
-                Зарплата выплачивается 3 раза в месяц, На банк который вы укажите, или же наличными, как вам будет удобно
+                Зарплата выплачивается 3 раза в месяц, На банк который вы
+                укажите, или же наличными, как вам будет удобно
               </p>
-              <button data-modal-btn="electric-certificate" class="btn-main simple__tab-btn">
-                <span>Оставить заявку</span>
-                <svg class="btn-main__icon">
-                  <use xlink:href="img/icons/icons.svg#icon-arrow"></use>
-                </svg>
-              </button>
             </div>
             <div data-tab="at-2">
               <p class="simple__tab-content">
-                22222В нашем баре вы найдете всё для вашего удовольствия: от
-                ароматного кофе и чая до освежающих фрешей, авторских коктейлей 18+ и
-                нежных молочных коктейлей. А для ценителей сладкого – наши фирменные
-                сырники! Все напитки – комплемент от нашего салона.
+                222Зарплата выплачивается 3 раза в месяц, На банк который вы
+                укажите, или же наличными, как вам будет удобно
               </p>
-              <button data-modal-btn="paper-certificate" class="btn-main simple__tab-btn">
-                <span>Оставить заявку</span>
-                <svg class="btn-main__icon">
-                  <use xlink:href="img/icons/icons.svg#icon-arrow"></use>
-                </svg>
-              </button>
+            </div>
+            <div data-tab="at-3">
+              <p class="simple__tab-content">
+                333Зарплата выплачивается 3 раза в месяц, На банк который вы
+                укажите, или же наличными, как вам будет удобно
+              </p>
             </div>
           </div>
         </div>
       </section>
       @@include('html/components/jobs.html')
       @@include('html/components/resume.html')
-
     </main>
     @@include('html/components/footer.html')
     <script src="js/app.min.js"></script>

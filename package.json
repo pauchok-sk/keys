@@ -87,7 +87,6 @@
 	},
 	"dependencies": {
 		"gulp-cheerio": "^1.0.0",
-		"isotope-layout": "^3.0.6",
-		"simplebar": "latest"
+		"isotope-layout": "^3.0.6"
 	}
 }

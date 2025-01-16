@@ -29,7 +29,7 @@
     text-align: center;
   }
   &__tag {
-    margin: 0;
+    margin: 0 !important;
   }
   &__nav {
     flex: 0 1 1150px;
@@ -44,7 +44,9 @@
   }
   &__column {
     flex: 1;
-    border-right: 1px solid black;
+    &:not(:last-child) {
+      border-right: 1px solid black;
+    }
     @include laptop-min {
       &:first-child {
         flex: 0 0 100%;
@@ -57,7 +59,7 @@
     }
     @include tablet {
       flex: 0 0 100%;
-      border-right: none;
+      border-right: none !important;
       &:not(:last-child) {
         border-bottom: 1px solid black;
       }
@@ -190,6 +192,9 @@
 
       @include tablet {
         padding: 14px 20px;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.84px;
       }
 
       svg {
@@ -214,7 +219,9 @@
     }
   }
   &__bottom-container {
-    @include flex-between;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     gap: 8px;
     @include tablet {
       flex-direction: column;
@@ -227,8 +234,9 @@
     margin: 0;
   }
   &__policy {
+    transition: opacity 0.2s ease;
     @include hover {
-      text-decoration: underline;
+      opacity: 0.5;
     }
   }
   &__created {
@@ -236,9 +244,10 @@
     a {
       text-decoration: underline;
       margin-left: auto;
+      transition: opacity 0.2s ease;
 
       @include hover {
-        text-decoration: none;
+        opacity: 0.5;
       }
     }
   }

@@ -154,4 +154,43 @@
     width: 16px;
     height: 16px;
   }
+  &__contacts {
+    display: none;
+    padding: 24px 16px;
+    @include laptop-min {
+      display: block;
+    }
+  }
+  &__contacts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    li {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 22px;
+
+      a {
+        transition: opacity .2s ease;
+        @include hover {
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+  &__contacts-icon {
+    width: 20px;
+    height: 20px;
+  }
+  &__contacts-title {
+    display: block;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.72px;
+    text-transform: uppercase;
+  }
 }

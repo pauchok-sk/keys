@@ -292,13 +292,13 @@
         const burgerBtn = document.querySelector("#burger-btn");
         const burger = document.querySelector("#burger");
         const headerList = document.querySelector(".header__list");
-        const headerInst = document.querySelector(".header__inst");
+        const headerBurgerMenu = document.querySelector(".header__burger-menu");
         const servicesBtn = burger.querySelector("#services-open");
         const sectionsBtn = burger.querySelector("#sections-open");
         const services = burger.querySelector("#services");
         const sections = burger.querySelector("#sections");
         if (burger) {
-            headerInst.style.display = "none";
+            headerBurgerMenu.style.display = "none";
             burgerBtn.addEventListener("click", (e => {
                 e.stopPropagation();
                 if (burger.classList.contains("_open")) closeBurger(); else openBurger();
@@ -310,9 +310,9 @@
                 if (window.matchMedia("(min-width:1024px)").matches) {
                     headerList.classList.add("_hidden");
                     headerList.style.display = "none";
-                    headerInst.style.display = "flex";
+                    headerBurgerMenu.style.display = "flex";
                     setTimeout((() => {
-                        headerInst.classList.add("_active");
+                        headerBurgerMenu.classList.add("_active");
                     }), 200);
                 }
                 burger.addEventListener("click", (e => e.stopPropagation()));
@@ -323,9 +323,9 @@
                 burgerBtn.classList.remove("_active");
                 document.body.classList.remove("body-hidden");
                 if (window.matchMedia("(min-width:1025px)").matches) {
-                    headerInst.classList.remove("_active");
+                    headerBurgerMenu.classList.remove("_active");
                     headerList.style.display = "flex";
-                    headerInst.style.display = "none";
+                    headerBurgerMenu.style.display = "none";
                     setTimeout((() => {
                         headerList.classList.remove("_hidden");
                     }), 200);
@@ -8744,7 +8744,7 @@
                 });
                 const placemark = new ymaps.Placemark(center, {}, {
                     iconLayout: "default#image",
-                    iconImageHref: "../img/map.svg",
+                    iconImageHref: "./img/map.svg",
                     iconImageSize: [ 66, 66 ],
                     iconImageOffset: [ -35, -45 ]
                 });

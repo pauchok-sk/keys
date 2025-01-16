@@ -20,6 +20,11 @@ img {
 body {
   font-family: "Mulish", sans-serif;
   background-color: var(--bg);
+
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
 }
 
 section {

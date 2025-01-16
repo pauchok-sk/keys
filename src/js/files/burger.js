@@ -2,14 +2,14 @@ export default function burger() {
   const burgerBtn = document.querySelector("#burger-btn");
   const burger = document.querySelector("#burger");
   const headerList = document.querySelector(".header__list");
-  const headerInst = document.querySelector(".header__inst");
+  const headerBurgerMenu = document.querySelector(".header__burger-menu");
   const servicesBtn = burger.querySelector("#services-open");
   const sectionsBtn = burger.querySelector("#sections-open");
   const services = burger.querySelector("#services");
   const sections = burger.querySelector("#sections");
 
   if (burger) {
-    headerInst.style.display = "none";
+    headerBurgerMenu.style.display = "none";
 
     burgerBtn.addEventListener("click", (e) => {
       e.stopPropagation();
@@ -29,10 +29,10 @@ export default function burger() {
       if (window.matchMedia("(min-width:1024px)").matches) {
         headerList.classList.add("_hidden");
         headerList.style.display = "none";
-        headerInst.style.display = "flex";
+        headerBurgerMenu.style.display = "flex";
 
         setTimeout(() => {
-          headerInst.classList.add("_active");
+          headerBurgerMenu.classList.add("_active");
         }, 200);
       }
 
@@ -46,9 +46,9 @@ export default function burger() {
 
       document.body.classList.remove("body-hidden");
       if (window.matchMedia("(min-width:1025px)").matches) {
-        headerInst.classList.remove("_active");
+        headerBurgerMenu.classList.remove("_active");
         headerList.style.display = "flex";
-        headerInst.style.display = "none";
+        headerBurgerMenu.style.display = "none";
 
         setTimeout(() => {
           headerList.classList.remove("_hidden");

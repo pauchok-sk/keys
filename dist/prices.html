@@ -8,9 +8,9 @@
 	<link rel="shortcut icon" href="favicon.ico" />
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap&_v=20250116013024" rel="stylesheet" />
-	<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap&_v=20250116013024" rel="stylesheet" />
-	<link rel="stylesheet" href="css/style.min.css?_v=20250116013024" />
+	<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap&_v=20250116224103" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap&_v=20250116224103" rel="stylesheet" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20250116224103" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
@@ -30,12 +30,17 @@
 							<use xlink:href="img/icons/icons.svg#icon-close"></use>
 						</svg>
 					</button>
+				</div>
+				<div class="header__burger-menu">
 					<a href="#" target="_blank" class="header__inst">
 						<svg class="header__inst-icon">
 							<use xlink:href="img/icons/icons.svg#icon-inst"></use>
 						</svg>
 						<span>na_klavishah</span>
 					</a>
+					<button data-modal-btn="order-call" class="btn-clear header__btn-call">
+						Обратный звонок
+					</button>
 				</div>
 				<ul class="list header__list">
 					<li>
@@ -102,24 +107,52 @@
 					<a href="#">Наши работы</a>
 				</li>
 				<li>
-					<a href="#">Наши работы</a>
+					<a href="#">Цены</a>
 				</li>
 				<li>
-					<a href="#">Наши работы</a>
+					<a href="#">Акции</a>
 				</li>
 				<li>
-					<a href="#">Наши работы</a>
+					<a href="#">Блог</a>
 				</li>
 				<li>
-					<a href="#">Наши работы</a>
+					<a href="#">Отзывы</a>
 				</li>
 				<li>
-					<a href="#">Наши работы</a>
+					<a href="#">О нас</a>
 				</li>
 				<li>
-					<a href="#">Наши работы</a>
+					<a href="#">Контакты</a>
+				</li>
+				<li>
+					<a href="#">Вакансии</a>
 				</li>
 			</ul>
+			<div class="burger__contacts">
+				<ul class="list burger__contacts-list">
+					<li>
+						<svg class="burger__contacts-icon">
+							<use xlink:href='img/icons/icons.svg#icon-tel-flip'></use>
+						</svg>
+						<div>
+							<a href="tel:+79186760074">+7 (918) 676-00-74</a>
+							<span class="burger__contacts-title">Обратный звонок</span>
+						</div>
+					</li>
+					<li>
+						<svg class="burger__contacts-icon">
+							<use xlink:href='img/icons/icons.svg#icon-location'></use>
+						</svg>
+						<span>Адреса наших салонов</span>
+					</li>
+					<li>
+						<svg class="burger__contacts-icon">
+							<use xlink:href='img/icons/icons.svg#icon-clock'></use>
+						</svg>
+						<span>Ежедневно: с 09:30 до 22.00</span>
+					</li>
+				</ul>
+			</div>
 		</div>
 		<div class="burger__column" id="services">
 			<span class="burger__column-title">
@@ -411,55 +444,9 @@
 						<h3 class="title title-3 price__info-title">Маникюр и педикюр</h3>
 						<ul class="list price__list">
 							<li class="price__item">
-								<a href="#">
-									<div class="price__item-head">
-										<h5 class="price__item-title">Парафинотерапия рук</h5>
-										<span class="title price__item-price">500 ₽</span>
-										<svg class="price__item-icon">
-											<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
-										</svg>
-									</div>
-									<p class="price__item-content">
-										В стоимость услуги входит обработка рук спреем-лосьоном,
-										скрабирование, нанесение крема тонким слоем на кисти рук, маска
-										из холодного крем- парафина, массаж рук
-									</p>
-								</a>
-							</li>
-							<li class="price__item">
-								<a href="#">
-									<div class="price__item-head">
-										<h5 class="price__item-title">Пилинг рук</h5>
-										<span class="title price__item-price">500 ₽</span>
-										<svg class="price__item-icon">
-											<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
-										</svg>
-									</div>
-								</a>
-							</li>
-							<li class="price__item">
-								<div class="price__item-head">
-									<h5 class="price__item-title">
-										SPA-уход для рук (пилинг, массаж рук, парафинотерапия)
-									</h5>
-									<span class="title price__item-price">500 ₽</span>
-									<svg class="price__item-icon">
-										<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
-									</svg>
-								</div>
-								<p class="price__item-content">
-									В стоимость услуги входит обработка рук спреем-лосьоном,
-									скрабирование, нанесение крема тонким слоем на кисти рук, маска из
-									холодного крем- парафина, массаж рук
-								</p>
-							</li>
-							<li class="price__item">
 								<div class="price__item-head">
 									<h5 class="price__item-title">Парафинотерапия рук</h5>
 									<span class="title price__item-price">500 ₽</span>
-									<svg class="price__item-icon">
-										<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
-									</svg>
 								</div>
 								<p class="price__item-content">
 									В стоимость услуги входит обработка рук спреем-лосьоном,
@@ -471,9 +458,6 @@
 								<div class="price__item-head">
 									<h5 class="price__item-title">Пилинг рук</h5>
 									<span class="title price__item-price">500 ₽</span>
-									<svg class="price__item-icon">
-										<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
-									</svg>
 								</div>
 							</li>
 							<li class="price__item">
@@ -482,9 +466,6 @@
 										SPA-уход для рук (пилинг, массаж рук, парафинотерапия)
 									</h5>
 									<span class="title price__item-price">500 ₽</span>
-									<svg class="price__item-icon">
-										<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
-									</svg>
 								</div>
 								<p class="price__item-content">
 									В стоимость услуги входит обработка рук спреем-лосьоном,
@@ -496,9 +477,6 @@
 								<div class="price__item-head">
 									<h5 class="price__item-title">Парафинотерапия рук</h5>
 									<span class="title price__item-price">500 ₽</span>
-									<svg class="price__item-icon">
-										<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
-									</svg>
 								</div>
 								<p class="price__item-content">
 									В стоимость услуги входит обработка рук спреем-лосьоном,
@@ -510,9 +488,36 @@
 								<div class="price__item-head">
 									<h5 class="price__item-title">Пилинг рук</h5>
 									<span class="title price__item-price">500 ₽</span>
-									<svg class="price__item-icon">
-										<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
-									</svg>
+								</div>
+							</li>
+							<li class="price__item">
+								<div class="price__item-head">
+									<h5 class="price__item-title">
+										SPA-уход для рук (пилинг, массаж рук, парафинотерапия)
+									</h5>
+									<span class="title price__item-price">500 ₽</span>
+								</div>
+								<p class="price__item-content">
+									В стоимость услуги входит обработка рук спреем-лосьоном,
+									скрабирование, нанесение крема тонким слоем на кисти рук, маска из
+									холодного крем- парафина, массаж рук
+								</p>
+							</li>
+							<li class="price__item">
+								<div class="price__item-head">
+									<h5 class="price__item-title">Парафинотерапия рук</h5>
+									<span class="title price__item-price">500 ₽</span>
+								</div>
+								<p class="price__item-content">
+									В стоимость услуги входит обработка рук спреем-лосьоном,
+									скрабирование, нанесение крема тонким слоем на кисти рук, маска из
+									холодного крем- парафина, массаж рук
+								</p>
+							</li>
+							<li class="price__item">
+								<div class="price__item-head">
+									<h5 class="price__item-title">Пилинг рук</h5>
+									<span class="title price__item-price">500 ₽</span>
 								</div>
 							</li>
 						</ul>
@@ -547,55 +552,9 @@
 						<h3 class="title title-3 price__info-title">Покрытие и дизайн</h3>
 						<ul class="list price__list">
 							<li class="price__item">
-								<a href="#">
-									<div class="price__item-head">
-										<h5 class="price__item-title">Парафинотерапия рук</h5>
-										<span class="title price__item-price">500 ₽</span>
-										<svg class="price__item-icon">
-											<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
-										</svg>
-									</div>
-									<p class="price__item-content">
-										В стоимость услуги входит обработка рук спреем-лосьоном,
-										скрабирование, нанесение крема тонким слоем на кисти рук, маска
-										из холодного крем- парафина, массаж рук
-									</p>
-								</a>
-							</li>
-							<li class="price__item">
-								<a href="#">
-									<div class="price__item-head">
-										<h5 class="price__item-title">Пилинг рук</h5>
-										<span class="title price__item-price">500 ₽</span>
-										<svg class="price__item-icon">
-											<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
-										</svg>
-									</div>
-								</a>
-							</li>
-							<li class="price__item">
-								<div class="price__item-head">
-									<h5 class="price__item-title">
-										SPA-уход для рук (пилинг, массаж рук, парафинотерапия)
-									</h5>
-									<span class="title price__item-price">500 ₽</span>
-									<svg class="price__item-icon">
-										<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
-									</svg>
-								</div>
-								<p class="price__item-content">
-									В стоимость услуги входит обработка рук спреем-лосьоном,
-									скрабирование, нанесение крема тонким слоем на кисти рук, маска из
-									холодного крем- парафина, массаж рук
-								</p>
-							</li>
-							<li class="price__item">
 								<div class="price__item-head">
 									<h5 class="price__item-title">Парафинотерапия рук</h5>
 									<span class="title price__item-price">500 ₽</span>
-									<svg class="price__item-icon">
-										<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
-									</svg>
 								</div>
 								<p class="price__item-content">
 									В стоимость услуги входит обработка рук спреем-лосьоном,
@@ -607,9 +566,6 @@
 								<div class="price__item-head">
 									<h5 class="price__item-title">Пилинг рук</h5>
 									<span class="title price__item-price">500 ₽</span>
-									<svg class="price__item-icon">
-										<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
-									</svg>
 								</div>
 							</li>
 							<li class="price__item">
@@ -618,9 +574,6 @@
 										SPA-уход для рук (пилинг, массаж рук, парафинотерапия)
 									</h5>
 									<span class="title price__item-price">500 ₽</span>
-									<svg class="price__item-icon">
-										<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
-									</svg>
 								</div>
 								<p class="price__item-content">
 									В стоимость услуги входит обработка рук спреем-лосьоном,
@@ -632,9 +585,6 @@
 								<div class="price__item-head">
 									<h5 class="price__item-title">Парафинотерапия рук</h5>
 									<span class="title price__item-price">500 ₽</span>
-									<svg class="price__item-icon">
-										<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
-									</svg>
 								</div>
 								<p class="price__item-content">
 									В стоимость услуги входит обработка рук спреем-лосьоном,
@@ -646,9 +596,36 @@
 								<div class="price__item-head">
 									<h5 class="price__item-title">Пилинг рук</h5>
 									<span class="title price__item-price">500 ₽</span>
-									<svg class="price__item-icon">
-										<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
-									</svg>
+								</div>
+							</li>
+							<li class="price__item">
+								<div class="price__item-head">
+									<h5 class="price__item-title">
+										SPA-уход для рук (пилинг, массаж рук, парафинотерапия)
+									</h5>
+									<span class="title price__item-price">500 ₽</span>
+								</div>
+								<p class="price__item-content">
+									В стоимость услуги входит обработка рук спреем-лосьоном,
+									скрабирование, нанесение крема тонким слоем на кисти рук, маска из
+									холодного крем- парафина, массаж рук
+								</p>
+							</li>
+							<li class="price__item">
+								<div class="price__item-head">
+									<h5 class="price__item-title">Парафинотерапия рук</h5>
+									<span class="title price__item-price">500 ₽</span>
+								</div>
+								<p class="price__item-content">
+									В стоимость услуги входит обработка рук спреем-лосьоном,
+									скрабирование, нанесение крема тонким слоем на кисти рук, маска из
+									холодного крем- парафина, массаж рук
+								</p>
+							</li>
+							<li class="price__item">
+								<div class="price__item-head">
+									<h5 class="price__item-title">Пилинг рук</h5>
+									<span class="title price__item-price">500 ₽</span>
 								</div>
 							</li>
 						</ul>
@@ -683,55 +660,9 @@
 						<h3 class="title title-3 price__info-title">Уход</h3>
 						<ul class="list price__list">
 							<li class="price__item">
-								<a href="#">
-									<div class="price__item-head">
-										<h5 class="price__item-title">Парафинотерапия рук</h5>
-										<span class="title price__item-price">500 ₽</span>
-										<svg class="price__item-icon">
-											<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
-										</svg>
-									</div>
-									<p class="price__item-content">
-										В стоимость услуги входит обработка рук спреем-лосьоном,
-										скрабирование, нанесение крема тонким слоем на кисти рук, маска
-										из холодного крем- парафина, массаж рук
-									</p>
-								</a>
-							</li>
-							<li class="price__item">
-								<a href="#">
-									<div class="price__item-head">
-										<h5 class="price__item-title">Пилинг рук</h5>
-										<span class="title price__item-price">500 ₽</span>
-										<svg class="price__item-icon">
-											<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
-										</svg>
-									</div>
-								</a>
-							</li>
-							<li class="price__item">
-								<div class="price__item-head">
-									<h5 class="price__item-title">
-										SPA-уход для рук (пилинг, массаж рук, парафинотерапия)
-									</h5>
-									<span class="title price__item-price">500 ₽</span>
-									<svg class="price__item-icon">
-										<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
-									</svg>
-								</div>
-								<p class="price__item-content">
-									В стоимость услуги входит обработка рук спреем-лосьоном,
-									скрабирование, нанесение крема тонким слоем на кисти рук, маска из
-									холодного крем- парафина, массаж рук
-								</p>
-							</li>
-							<li class="price__item">
 								<div class="price__item-head">
 									<h5 class="price__item-title">Парафинотерапия рук</h5>
 									<span class="title price__item-price">500 ₽</span>
-									<svg class="price__item-icon">
-										<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
-									</svg>
 								</div>
 								<p class="price__item-content">
 									В стоимость услуги входит обработка рук спреем-лосьоном,
@@ -743,9 +674,6 @@
 								<div class="price__item-head">
 									<h5 class="price__item-title">Пилинг рук</h5>
 									<span class="title price__item-price">500 ₽</span>
-									<svg class="price__item-icon">
-										<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
-									</svg>
 								</div>
 							</li>
 							<li class="price__item">
@@ -754,9 +682,6 @@
 										SPA-уход для рук (пилинг, массаж рук, парафинотерапия)
 									</h5>
 									<span class="title price__item-price">500 ₽</span>
-									<svg class="price__item-icon">
-										<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
-									</svg>
 								</div>
 								<p class="price__item-content">
 									В стоимость услуги входит обработка рук спреем-лосьоном,
@@ -768,9 +693,6 @@
 								<div class="price__item-head">
 									<h5 class="price__item-title">Парафинотерапия рук</h5>
 									<span class="title price__item-price">500 ₽</span>
-									<svg class="price__item-icon">
-										<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
-									</svg>
 								</div>
 								<p class="price__item-content">
 									В стоимость услуги входит обработка рук спреем-лосьоном,
@@ -782,9 +704,36 @@
 								<div class="price__item-head">
 									<h5 class="price__item-title">Пилинг рук</h5>
 									<span class="title price__item-price">500 ₽</span>
-									<svg class="price__item-icon">
-										<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
-									</svg>
+								</div>
+							</li>
+							<li class="price__item">
+								<div class="price__item-head">
+									<h5 class="price__item-title">
+										SPA-уход для рук (пилинг, массаж рук, парафинотерапия)
+									</h5>
+									<span class="title price__item-price">500 ₽</span>
+								</div>
+								<p class="price__item-content">
+									В стоимость услуги входит обработка рук спреем-лосьоном,
+									скрабирование, нанесение крема тонким слоем на кисти рук, маска из
+									холодного крем- парафина, массаж рук
+								</p>
+							</li>
+							<li class="price__item">
+								<div class="price__item-head">
+									<h5 class="price__item-title">Парафинотерапия рук</h5>
+									<span class="title price__item-price">500 ₽</span>
+								</div>
+								<p class="price__item-content">
+									В стоимость услуги входит обработка рук спреем-лосьоном,
+									скрабирование, нанесение крема тонким слоем на кисти рук, маска из
+									холодного крем- парафина, массаж рук
+								</p>
+							</li>
+							<li class="price__item">
+								<div class="price__item-head">
+									<h5 class="price__item-title">Пилинг рук</h5>
+									<span class="title price__item-price">500 ₽</span>
 								</div>
 							</li>
 						</ul>
@@ -946,35 +895,35 @@
 						<p class="salons__slide-content">Ежедневно с 9:00 до 21:00</p>
 					</div>
 					<div class="swiper-slide">
-						<span class="number salons__slide-numb">1</span>
+						<span class="number salons__slide-numb">2</span>
 						<img src="img/salon.jpg" alt="image" class="salons__slide-img" />
 						<h5 class="title title-4 salons__slide-title">ул. Коммунаров, 268</h5>
 						<a href="tel:+79186760074" class="salons__slide-tel">+7 (918) 676-00-74</a>
 						<p class="salons__slide-content">Ежедневно с 9:00 до 21:00</p>
 					</div>
 					<div class="swiper-slide">
-						<span class="number salons__slide-numb">1</span>
+						<span class="number salons__slide-numb">3</span>
 						<img src="img/salon.jpg" alt="image" class="salons__slide-img" />
 						<h5 class="title title-4 salons__slide-title">ул. Коммунаров, 268</h5>
 						<a href="tel:+79186760074" class="salons__slide-tel">+7 (918) 676-00-74</a>
 						<p class="salons__slide-content">Ежедневно с 9:00 до 21:00</p>
 					</div>
 					<div class="swiper-slide">
-						<span class="number salons__slide-numb">1</span>
+						<span class="number salons__slide-numb">4</span>
 						<img src="img/salon.jpg" alt="image" class="salons__slide-img" />
 						<h5 class="title title-4 salons__slide-title">ул. Коммунаров, 268</h5>
 						<a href="tel:+79186760074" class="salons__slide-tel">+7 (918) 676-00-74</a>
 						<p class="salons__slide-content">Ежедневно с 9:00 до 21:00</p>
 					</div>
 					<div class="swiper-slide">
-						<span class="number salons__slide-numb">1</span>
+						<span class="number salons__slide-numb">5</span>
 						<img src="img/salon.jpg" alt="image" class="salons__slide-img" />
 						<h5 class="title title-4 salons__slide-title">ул. Коммунаров, 268</h5>
 						<a href="tel:+79186760074" class="salons__slide-tel">+7 (918) 676-00-74</a>
 						<p class="salons__slide-content">Ежедневно с 9:00 до 21:00</p>
 					</div>
 					<div class="swiper-slide">
-						<span class="number salons__slide-numb">1</span>
+						<span class="number salons__slide-numb">6</span>
 						<img src="img/salon.jpg" alt="image" class="salons__slide-img" />
 						<h5 class="title title-4 salons__slide-title">ул. Коммунаров, 268</h5>
 						<a href="tel:+79186760074" class="salons__slide-tel">+7 (918) 676-00-74</a>
@@ -1263,7 +1212,7 @@
 		<div class="footer__bottom">
 			<div class="container footer__bottom-container">
 				<p class="footer__copyright">©2023 «На клавишах».</p>
-				<a href="#" class="footer__policy">Политика конфиденциальности.</a>
+				<a href="#" class="footer__policy">Политика конфиденциальности</a>
 				<div class="footer__created">
 					<span>Created by </span>
 					<a href="#" target="_blank">DragoWeb</a>
@@ -1272,7 +1221,7 @@
 		</div>
 	</footer>
 
-	<script src="js/app.min.js?_v=20250116013024"></script>
+	<script src="js/app.min.js?_v=20250116224103"></script>
 </body>
 
 </html>
