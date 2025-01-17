@@ -79,6 +79,10 @@
       height: auto !important;
       text-align: center;
       border-right: 1px solid black;
+      transition: background-color 0.2s ease !important;
+      @include hover {
+        background-color: var(--main);
+      }
 
       @include laptop {
         width: 480px !important;
@@ -105,6 +109,10 @@
     text-align: center;
     border-right: 1px solid black;
     border-bottom: 1px solid black;
+    transition: background-color 0.2s ease !important;
+    @include hover {
+      background-color: var(--main);
+    }
     &:nth-child(4n) {
       border-right: none;
     }
@@ -135,7 +143,7 @@
     }
 
     .services__slide-img {
-      @media (max-width:1539px) {
+      @media (max-width: 1539px) {
         height: 380px;
       }
       @include tablet {

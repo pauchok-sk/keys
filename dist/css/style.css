@@ -836,6 +836,23 @@ section:not(:last-child) {
   letter-spacing: .72px;
   text-transform: uppercase
 }
+.burger__social {
+  display: flex;
+  margin-top: 35px;
+  gap: 16px
+}
+.burger__social a {
+  display: block;
+  width: 44px;
+  height: 44px;
+  transition: -webkit-transform .2s ease;
+  transition: transform .2s ease;
+  transition: transform .2s ease,-webkit-transform .2s ease
+}
+.burger__social-icon {
+  width: 100%;
+  height: 100%
+}
 .stock {
   position: fixed;
   max-width: 600px;
@@ -1237,7 +1254,8 @@ section:not(:last-child) {
   padding: 30px;
   height: auto!important;
   text-align: center;
-  border-right: 1px solid #000
+  border-right: 1px solid #000;
+  transition: background-color .2s ease!important
 }
 .services__wrapper {
   display: grid;
@@ -1254,7 +1272,8 @@ section:not(:last-child) {
   height: auto!important;
   text-align: center;
   border-right: 1px solid #000;
-  border-bottom: 1px solid #000
+  border-bottom: 1px solid #000;
+  transition: background-color .2s ease!important
 }
 .services__article:nth-child(4n) {
   border-right: none
@@ -4734,6 +4753,19 @@ html.with-fancybox body.hide-scrollbar {
   .services__article .services__slide-img {
     height: 380px
   }
+  .intro-single__title._middle {
+    font-size: 54px;
+    line-height: 60px
+  }
+  .intro-single__list {
+    margin: 40px 0
+  }
+  .intro-single__img._big {
+    min-height: 500px
+  }
+  .intro-single__img._big-m {
+    min-height: 500px
+  }
   .article__gallery-img:first-child {
     margin-right: 40px
   }
@@ -4746,6 +4778,17 @@ html.with-fancybox body.hide-scrollbar {
     height: 440px
   }
 }
+@media (max-width:1490px) {
+  .intro {
+    min-height: 690px
+  }
+  .sect-img__img {
+    height: 750px
+  }
+  .sect-img__buttons {
+    margin-top: 40px
+  }
+}
 @media (max-width:1455px) {
   .menu__item-img {
     height: 400px
@@ -4755,27 +4798,11 @@ html.with-fancybox body.hide-scrollbar {
   .breadcrumbs {
     margin-bottom: 40px
   }
-  .intro {
-    min-height: 690px
-  }
   .services__slide-img {
     height: 310px
   }
-  .sect-img__img {
-    height: 750px
-  }
-  .sect-img__buttons {
-    margin-top: 40px
-  }
   .intro-single__container {
     padding: 80px 30px
-  }
-  .intro-single__title._middle {
-    font-size: 62px;
-    line-height: 64px
-  }
-  .intro-single__list {
-    margin: 40px 0
   }
   .intro-single__img {
     min-height: 600px
@@ -4887,12 +4914,6 @@ html.with-fancybox body.hide-scrollbar {
   .intro-single__img {
     min-height: 500px
   }
-  .intro-single__img._big {
-    min-height: 500px
-  }
-  .intro-single__img._big-m {
-    min-height: 500px
-  }
   .our-works__container {
     gap: 40px
   }
@@ -4990,10 +5011,6 @@ html.with-fancybox body.hide-scrollbar {
     line-height: 60px
   }
   .intro-simple__title._min {
-    font-size: 54px;
-    line-height: 60px
-  }
-  .intro-single__title._middle {
     font-size: 54px;
     line-height: 60px
   }
@@ -6237,6 +6254,10 @@ html.with-fancybox body.hide-scrollbar {
   .burger__contacts-list li a:hover {
     opacity: .5
   }
+  .burger__social a:hover {
+    -webkit-transform: scale(1.07);
+    transform: scale(1.07)
+  }
   .stock__close:hover {
     opacity: .5
   }
@@ -6263,6 +6284,12 @@ html.with-fancybox body.hide-scrollbar {
   }
   .services__tab-btn:hover {
     opacity: 1
+  }
+  .services__slider .swiper-slide:hover {
+    background-color: var(--main)
+  }
+  .services__article:hover {
+    background-color: var(--main)
   }
   .sect-img__content-main a:hover {
     text-decoration: underline
@@ -6353,6 +6380,10 @@ html.with-fancybox body.hide-scrollbar {
   .burger__contacts-list li a:active {
     opacity: .5
   }
+  .burger__social a:active {
+    -webkit-transform: scale(1.07);
+    transform: scale(1.07)
+  }
   .stock__close:active {
     opacity: .5
   }
@@ -6379,6 +6410,12 @@ html.with-fancybox body.hide-scrollbar {
   }
   .services__tab-btn:active {
     opacity: 1
+  }
+  .services__slider .swiper-slide:active {
+    background-color: var(--main)
+  }
+  .services__article:active {
+    background-color: var(--main)
   }
   .sect-img__content-main a:active {
     text-decoration: underline

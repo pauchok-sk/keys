@@ -36,12 +36,7 @@
       font-weight: 300;
       line-height: 76px;
     
-      @include desktop {
-        font-size: 62px;
-        line-height: 64px;
-      }
-    
-      @include laptop-middle {
+      @include desktop-big {
         font-size: 54px;
         line-height: 60px;
       }
@@ -59,7 +54,7 @@
     gap: 32px;
     row-gap: 20px;
     margin: 60px 0px 100px 0px;
-    @include desktop {
+    @include desktop-big {
       margin: 40px 0px;
     }
     @include tablet {
@@ -149,7 +144,7 @@
 
     &._big {
       min-height: 800px;
-      @include laptop {
+      @include desktop-big {
         min-height: 500px;
       }
       @include laptop-min {
@@ -167,7 +162,7 @@
     }
     &._big-m {
       min-height: 830px;
-      @include laptop {
+      @include desktop-big {
         min-height: 500px;
       }
       @include laptop-min {

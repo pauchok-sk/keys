@@ -58,13 +58,25 @@ export default function burger() {
       document.body.removeEventListener("click", closeBurger);
     }
 
+    function updateHeightBurger() {
+      const heightHeader = document.querySelector(".header").clientHeight;
+      const height = window.visualViewport.height - heightHeader;
+
+      burger.style.maxHeight = `${height}px`;
+    }
+
+    window.visualViewport.addEventListener("resize", updateHeightBurger);
+    window.visualViewport.addEventListener("scroll", updateHeightBurger);
+
+    updateHeightBurger();
+
     servicesBtn.addEventListener("click", () => {
       services.style.display = "block";
       sections.style.display = "none";
-    })
+    });
     sectionsBtn.addEventListener("click", () => {
       services.style.display = "none";
       sections.style.display = "block";
-    })
+    });
   }
 }
